@@ -1,0 +1,2060 @@
+INPUT PARAMETERS:
+msa_name /data/wangd17/contact_seqs/l-repressor_all/lambda_contacts_stable_all.dat
+freq_dir /data/wangd17/Ising-Model_biowulf/scratch/lambda_stable_all/lambda=0.000000_mc_steps_init=1000_as_al_gamma=0.100000_cutoff_rmsd=0.002000/
+out_name lambda_stable_all_cont2.bm_param
+folder_name lambda_stable_all_cont2
+scratch_dir /data/wangd17/Ising-Model_biowulf/scratch/
+input_name /data/wangd17/Ising-Model_biowulf/scratch/lambda_stable_all_cont/lambda=0.000000_mc_steps_init=16000_as_al_gamma=0.100000_cutoff_rmsd=0.000020_restart1
+mc_init random
+lambda 0
+myseed 1
+max_iter 10000000
+mc_steps 128000
+eps0_h 0.02
+eps0_J 0.002
+adaptive_stepsize_on 1
+adaptive_sampling_on 1
+eps_inc 1.5
+eps_dec 0.6
+eps_min_h 0.001
+eps_max_h 2.5
+eps_min_J 0.00001
+eps_max_J_N 2.5
+gamma 0.1
+cutoff_freq 0.05
+delta 0.0
+symmetrize_on 0
+do_lowmem_fill 1
+cutoff_rmsd 0.00002
+conv_type rmsd
+verbose 1
+record_freq 50
+num_restarts 2
+
+/data/wangd17/contact_seqs/l-repressor_all/lambda_contacts_stable_all.dat
+Sequence length: 2926
+random
+conv type: rmsd
+Reading in MSA frequencies...
+Fitting model.
+
+iteration 0
+Number of threads allocated = 1
+Avg. energy: 90.3421
+RMS of dh, dJ: 0.000451198 0.00059626
+Max of dh, dJ: 0.00445518 0.123971
+
+iteration 1
+Number of threads allocated = 1
+Avg. energy: 90.0813
+RMS of dh, dJ: 0.000515589 0.000586777
+Max of dh, dJ: 0.00601749 0.124762
+
+iteration 2
+Number of threads allocated = 1
+Avg. energy: 90.2743
+RMS of dh, dJ: 0.00123448 0.000567032
+Max of dh, dJ: 0.0127675 0.122394
+
+iteration 3
+Number of threads allocated = 1
+Avg. energy: 90.1169
+RMS of dh, dJ: 0.000448162 0.0005891
+Max of dh, dJ: 0.00398624 0.124902
+
+iteration 4
+Number of threads allocated = 1
+Avg. energy: 90.0514
+RMS of dh, dJ: 0.00074683 0.00057122
+Max of dh, dJ: 0.00752057 0.122175
+
+iteration 5
+Number of threads allocated = 1
+Avg. energy: 90.1425
+RMS of dh, dJ: 0.000981229 0.000565587
+Max of dh, dJ: 0.010794 0.121433
+
+iteration 6
+Number of threads allocated = 1
+Avg. energy: 90.2707
+RMS of dh, dJ: 0.00145191 0.000567909
+Max of dh, dJ: 0.0148925 0.118511
+
+iteration 7
+Number of threads allocated = 1
+Avg. energy: 90.1426
+RMS of dh, dJ: 0.000480273 0.000589913
+Max of dh, dJ: 0.00536285 0.124347
+
+iteration 8
+Number of threads allocated = 1
+Avg. energy: 90.1543
+RMS of dh, dJ: 0.00081135 0.000571508
+Max of dh, dJ: 0.00863114 0.125121
+
+iteration 9
+Number of threads allocated = 1
+Avg. energy: 90.1003
+RMS of dh, dJ: 0.000481829 0.000584607
+Max of dh, dJ: 0.00516905 0.127332
+
+iteration 10
+Number of threads allocated = 1
+Avg. energy: 90.0972
+RMS of dh, dJ: 0.000447192 0.00059397
+Max of dh, dJ: 0.00500077 0.126215
+
+iteration 11
+Number of threads allocated = 1
+Avg. energy: 90.2016
+RMS of dh, dJ: 0.000464907 0.000601088
+Max of dh, dJ: 0.00447179 0.127877
+
+iteration 12
+Number of threads allocated = 1
+Avg. energy: 90.1619
+RMS of dh, dJ: 0.00134164 0.00056776
+Max of dh, dJ: 0.0156425 0.121331
+
+iteration 13
+Number of threads allocated = 1
+Avg. energy: 90.2624
+RMS of dh, dJ: 0.000522109 0.000616927
+Max of dh, dJ: 0.00498723 0.126035
+
+iteration 14
+Number of threads allocated = 1
+Avg. energy: 90.165
+RMS of dh, dJ: 0.00118942 0.000678783
+Max of dh, dJ: 0.0143913 0.133479
+
+iteration 15
+Number of threads allocated = 1
+Avg. energy: 90.0242
+RMS of dh, dJ: 0.000636775 0.000572407
+Max of dh, dJ: 0.00615527 0.122199
+
+iteration 16
+Number of threads allocated = 1
+Avg. energy: 90.1096
+RMS of dh, dJ: 0.000614656 0.00057539
+Max of dh, dJ: 0.00749406 0.124519
+
+iteration 17
+Number of threads allocated = 1
+Avg. energy: 90.2556
+RMS of dh, dJ: 0.000646425 0.000574373
+Max of dh, dJ: 0.00645213 0.122667
+
+iteration 18
+Number of threads allocated = 1
+Avg. energy: 90.1587
+RMS of dh, dJ: 0.00105567 0.000565746
+Max of dh, dJ: 0.0121924 0.123566
+
+iteration 19
+Number of threads allocated = 1
+Avg. energy: 90.1751
+RMS of dh, dJ: 0.000516199 0.000584065
+Max of dh, dJ: 0.00592871 0.126746
+
+iteration 20
+Number of threads allocated = 1
+Avg. energy: 90.194
+RMS of dh, dJ: 0.000536213 0.000610219
+Max of dh, dJ: 0.00702546 0.128441
+
+iteration 21
+Number of threads allocated = 1
+Avg. energy: 90.1251
+RMS of dh, dJ: 0.000670124 0.000571266
+Max of dh, dJ: 0.00746588 0.123535
+
+iteration 22
+Number of threads allocated = 1
+Avg. energy: 90.0766
+RMS of dh, dJ: 0.000581461 0.000576183
+Max of dh, dJ: 0.00832999 0.125652
+
+iteration 23
+Number of threads allocated = 1
+Avg. energy: 90.1547
+RMS of dh, dJ: 0.000470796 0.00058469
+Max of dh, dJ: 0.00574713 0.124847
+
+iteration 24
+Number of threads allocated = 1
+Avg. energy: 90.2129
+RMS of dh, dJ: 0.000482495 0.000604919
+Max of dh, dJ: 0.00463426 0.126043
+
+iteration 25
+Number of threads allocated = 1
+Avg. energy: 89.998
+RMS of dh, dJ: 0.000494245 0.000581261
+Max of dh, dJ: 0.00531514 0.127668
+
+iteration 26
+Number of threads allocated = 1
+Avg. energy: 90.0709
+RMS of dh, dJ: 0.000489307 0.000608525
+Max of dh, dJ: 0.00493175 0.127183
+
+iteration 27
+Number of threads allocated = 1
+Avg. energy: 90.1792
+RMS of dh, dJ: 0.000461395 0.000587292
+Max of dh, dJ: 0.00613406 0.125315
+
+iteration 28
+Number of threads allocated = 1
+Avg. energy: 90.0786
+RMS of dh, dJ: 0.000439078 0.000586803
+Max of dh, dJ: 0.00413545 0.126215
+
+iteration 29
+Number of threads allocated = 1
+Avg. energy: 90.2994
+RMS of dh, dJ: 0.00161967 0.000567325
+Max of dh, dJ: 0.0167751 0.120378
+
+iteration 30
+Number of threads allocated = 1
+Avg. energy: 90.1344
+RMS of dh, dJ: 0.00102234 0.000654359
+Max of dh, dJ: 0.0111624 0.129557
+
+iteration 31
+Number of threads allocated = 1
+Avg. energy: 90.0749
+RMS of dh, dJ: 0.000871975 0.000643518
+Max of dh, dJ: 0.0106966 0.126698
+
+iteration 32
+Number of threads allocated = 1
+Avg. energy: 90.2107
+RMS of dh, dJ: 0.000765797 0.000566734
+Max of dh, dJ: 0.00900968 0.123457
+
+iteration 33
+Number of threads allocated = 1
+Avg. energy: 90.1788
+RMS of dh, dJ: 0.000458928 0.00058552
+Max of dh, dJ: 0.00505819 0.126269
+
+iteration 34
+Number of threads allocated = 1
+Avg. energy: 90.252
+RMS of dh, dJ: 0.00100658 0.000561886
+Max of dh, dJ: 0.0105137 0.122355
+
+iteration 35
+Number of threads allocated = 1
+Avg. energy: 90.1953
+RMS of dh, dJ: 0.00110803 0.000662598
+Max of dh, dJ: 0.0126341 0.134612
+
+iteration 36
+Number of threads allocated = 1
+Avg. energy: 90.1021
+RMS of dh, dJ: 0.00134656 0.00056362
+Max of dh, dJ: 0.016197 0.120495
+
+iteration 37
+Number of threads allocated = 1
+Avg. energy: 90.104
+RMS of dh, dJ: 0.00110286 0.000562191
+Max of dh, dJ: 0.0122163 0.124699
+
+iteration 38
+Number of threads allocated = 1
+Avg. energy: 90.1181
+RMS of dh, dJ: 0.000866446 0.000562667
+Max of dh, dJ: 0.00928389 0.123355
+
+iteration 39
+Number of threads allocated = 1
+Avg. energy: 90.2898
+RMS of dh, dJ: 0.000922856 0.000646503
+Max of dh, dJ: 0.0110139 0.129705
+
+iteration 40
+Number of threads allocated = 1
+Avg. energy: 90.1565
+RMS of dh, dJ: 0.000671497 0.000567645
+Max of dh, dJ: 0.00649776 0.122137
+
+iteration 41
+Number of threads allocated = 1
+Avg. energy: 90.0785
+RMS of dh, dJ: 0.000580282 0.000574529
+Max of dh, dJ: 0.00661983 0.123004
+
+iteration 42
+Number of threads allocated = 1
+Avg. energy: 90.0261
+RMS of dh, dJ: 0.000708821 0.000568197
+Max of dh, dJ: 0.00691157 0.11998
+
+iteration 43
+Number of threads allocated = 1
+Avg. energy: 90.0664
+RMS of dh, dJ: 0.00163067 0.000569225
+Max of dh, dJ: 0.0183803 0.122066
+
+iteration 44
+Number of threads allocated = 1
+Avg. energy: 90.1248
+RMS of dh, dJ: 0.000454923 0.000594354
+Max of dh, dJ: 0.00620142 0.126199
+
+iteration 45
+Number of threads allocated = 1
+Avg. energy: 90.2002
+RMS of dh, dJ: 0.0010706 0.000563387
+Max of dh, dJ: 0.0110331 0.12455
+
+iteration 46
+Number of threads allocated = 1
+Avg. energy: 90.0978
+RMS of dh, dJ: 0.000597783 0.000613558
+Max of dh, dJ: 0.00843579 0.125924
+
+iteration 47
+Number of threads allocated = 1
+Avg. energy: 90.0773
+RMS of dh, dJ: 0.000564728 0.00060896
+Max of dh, dJ: 0.00641385 0.129543
+
+iteration 48
+Number of threads allocated = 1
+Avg. energy: 90.0824
+RMS of dh, dJ: 0.00143349 0.000564488
+Max of dh, dJ: 0.0163334 0.119566
+
+iteration 49
+Number of threads allocated = 1
+Avg. energy: 90.1828
+RMS of dh, dJ: 0.000597035 0.000613131
+Max of dh, dJ: 0.00831079 0.129065
+
+iteration 50
+Number of threads allocated = 1
+Avg. energy: 90.3295
+RMS of dh, dJ: 0.000568205 0.000575944
+Max of dh, dJ: 0.00621198 0.121081
+
+iteration 51
+Number of threads allocated = 1
+Avg. energy: 90.0519
+RMS of dh, dJ: 0.000434014 0.000595135
+Max of dh, dJ: 0.00373397 0.124801
+
+iteration 52
+Number of threads allocated = 1
+Avg. energy: 90.1108
+RMS of dh, dJ: 0.000884545 0.000562043
+Max of dh, dJ: 0.00939327 0.120847
+
+iteration 53
+Number of threads allocated = 1
+Avg. energy: 90.0546
+RMS of dh, dJ: 0.00045505 0.000589771
+Max of dh, dJ: 0.00471704 0.124855
+
+iteration 54
+Number of threads allocated = 1
+Avg. energy: 90.1455
+RMS of dh, dJ: 0.000852935 0.000565487
+Max of dh, dJ: 0.00934182 0.122738
+
+iteration 55
+Number of threads allocated = 1
+Avg. energy: 90.2437
+RMS of dh, dJ: 0.000692423 0.000567267
+Max of dh, dJ: 0.00840889 0.12148
+
+iteration 56
+Number of threads allocated = 1
+Avg. energy: 89.9614
+RMS of dh, dJ: 0.000537604 0.000572768
+Max of dh, dJ: 0.00540889 0.121566
+
+iteration 57
+Number of threads allocated = 1
+Avg. energy: 90.0256
+RMS of dh, dJ: 0.000542347 0.000574028
+Max of dh, dJ: 0.00655371 0.123816
+
+iteration 58
+Number of threads allocated = 1
+Avg. energy: 90.0433
+RMS of dh, dJ: 0.000794676 0.000564979
+Max of dh, dJ: 0.00803597 0.123081
+
+iteration 59
+Number of threads allocated = 1
+Avg. energy: 90.1445
+RMS of dh, dJ: 0.000484294 0.000587883
+Max of dh, dJ: 0.00458914 0.128691
+
+iteration 60
+Number of threads allocated = 1
+Avg. energy: 90.1135
+RMS of dh, dJ: 0.000467316 0.000594124
+Max of dh, dJ: 0.00491499 0.125394
+
+iteration 61
+Number of threads allocated = 1
+Avg. energy: 89.9291
+RMS of dh, dJ: 0.000701381 0.000567799
+Max of dh, dJ: 0.00693233 0.124199
+
+iteration 62
+Number of threads allocated = 1
+Avg. energy: 90.1431
+RMS of dh, dJ: 0.000634433 0.000569634
+Max of dh, dJ: 0.0058367 0.123644
+
+iteration 63
+Number of threads allocated = 1
+Avg. energy: 90.0802
+RMS of dh, dJ: 0.000494288 0.000598419
+Max of dh, dJ: 0.00490532 0.125933
+
+iteration 64
+Number of threads allocated = 1
+Avg. energy: 90.0507
+RMS of dh, dJ: 0.000555979 0.000605288
+Max of dh, dJ: 0.00719071 0.125838
+
+iteration 65
+Number of threads allocated = 1
+Avg. energy: 90.1762
+RMS of dh, dJ: 0.000431075 0.000591376
+Max of dh, dJ: 0.00427052 0.125129
+
+iteration 66
+Number of threads allocated = 1
+Avg. energy: 90.0982
+RMS of dh, dJ: 0.000452169 0.000581155
+Max of dh, dJ: 0.00427156 0.12359
+
+iteration 67
+Number of threads allocated = 1
+Avg. energy: 90.0883
+RMS of dh, dJ: 0.00106524 0.000560579
+Max of dh, dJ: 0.0110331 0.120128
+
+iteration 68
+Number of threads allocated = 1
+Avg. energy: 90.0519
+RMS of dh, dJ: 0.00101739 0.000648469
+Max of dh, dJ: 0.013217 0.131541
+
+iteration 69
+Number of threads allocated = 1
+Avg. energy: 90.2324
+RMS of dh, dJ: 0.000705332 0.00056498
+Max of dh, dJ: 0.00782563 0.121894
+
+iteration 70
+Number of threads allocated = 1
+Avg. energy: 90.0809
+RMS of dh, dJ: 0.00135164 0.000561446
+Max of dh, dJ: 0.0128826 0.119839
+
+iteration 71
+Number of threads allocated = 1
+Avg. energy: 90.1436
+RMS of dh, dJ: 0.000507189 0.00057619
+Max of dh, dJ: 0.00417744 0.123988
+
+iteration 72
+Number of threads allocated = 1
+Avg. energy: 90.1654
+RMS of dh, dJ: 0.000482268 0.000576916
+Max of dh, dJ: 0.00570577 0.125504
+
+iteration 73
+Number of threads allocated = 1
+Avg. energy: 90.2227
+RMS of dh, dJ: 0.00109775 0.00056075
+Max of dh, dJ: 0.0124394 0.119722
+
+iteration 74
+Number of threads allocated = 1
+Avg. energy: 90.1362
+RMS of dh, dJ: 0.000417927 0.000587079
+Max of dh, dJ: 0.00519427 0.127057
+
+iteration 75
+Number of threads allocated = 1
+Avg. energy: 90.1868
+RMS of dh, dJ: 0.00048044 0.000580627
+Max of dh, dJ: 0.00486906 0.124113
+
+iteration 76
+Number of threads allocated = 1
+Avg. energy: 90.1311
+RMS of dh, dJ: 0.000506373 0.000575368
+Max of dh, dJ: 0.00525968 0.126199
+
+iteration 77
+Number of threads allocated = 1
+Avg. energy: 90.183
+RMS of dh, dJ: 0.000821147 0.000633981
+Max of dh, dJ: 0.00883037 0.127244
+
+iteration 78
+Number of threads allocated = 1
+Avg. energy: 90.1999
+RMS of dh, dJ: 0.000891729 0.000561696
+Max of dh, dJ: 0.0102553 0.11991
+
+iteration 79
+Number of threads allocated = 1
+Avg. energy: 90.123
+RMS of dh, dJ: 0.000551233 0.000572474
+Max of dh, dJ: 0.00654093 0.121207
+
+iteration 80
+Number of threads allocated = 1
+Avg. energy: 90.137
+RMS of dh, dJ: 0.000623771 0.000613304
+Max of dh, dJ: 0.00790454 0.125838
+
+iteration 81
+Number of threads allocated = 1
+Avg. energy: 90.2331
+RMS of dh, dJ: 0.000489125 0.000580997
+Max of dh, dJ: 0.00502199 0.123379
+
+iteration 82
+Number of threads allocated = 1
+Avg. energy: 90.1937
+RMS of dh, dJ: 0.00120818 0.000560863
+Max of dh, dJ: 0.0125446 0.120386
+
+iteration 83
+Number of threads allocated = 1
+Avg. energy: 90.0864
+RMS of dh, dJ: 0.000421049 0.000585962
+Max of dh, dJ: 0.00381327 0.125918
+
+iteration 84
+Number of threads allocated = 1
+Avg. energy: 90.0821
+RMS of dh, dJ: 0.000910272 0.000561772
+Max of dh, dJ: 0.0113569 0.12148
+
+iteration 85
+Number of threads allocated = 1
+Avg. energy: 90.3877
+RMS of dh, dJ: 0.00166468 0.000570746
+Max of dh, dJ: 0.0172806 0.120472
+
+iteration 86
+Number of threads allocated = 1
+Avg. energy: 90.1872
+RMS of dh, dJ: 0.000457487 0.000587524
+Max of dh, dJ: 0.0053295 0.126426
+
+iteration 87
+Number of threads allocated = 1
+Avg. energy: 90.2332
+RMS of dh, dJ: 0.000495516 0.000597743
+Max of dh, dJ: 0.00643579 0.125168
+
+iteration 88
+Number of threads allocated = 1
+Avg. energy: 89.9908
+RMS of dh, dJ: 0.000490384 0.000576282
+Max of dh, dJ: 0.00627506 0.125949
+
+iteration 89
+Number of threads allocated = 1
+Avg. energy: 90.2368
+RMS of dh, dJ: 0.00110705 0.000561751
+Max of dh, dJ: 0.0124159 0.121995
+
+iteration 90
+Number of threads allocated = 1
+Avg. energy: 90.0846
+RMS of dh, dJ: 0.00135049 0.000565334
+Max of dh, dJ: 0.0157526 0.123566
+
+iteration 91
+Number of threads allocated = 1
+Avg. energy: 90.1826
+RMS of dh, dJ: 0.000700079 0.000620375
+Max of dh, dJ: 0.00825906 0.128307
+
+iteration 92
+Number of threads allocated = 1
+Avg. energy: 89.956
+RMS of dh, dJ: 0.000572768 0.00057161
+Max of dh, dJ: 0.00602094 0.123363
+
+iteration 93
+Number of threads allocated = 1
+Avg. energy: 90.1905
+RMS of dh, dJ: 0.000437344 0.000585353
+Max of dh, dJ: 0.00457388 0.12309
+
+iteration 94
+Number of threads allocated = 1
+Avg. energy: 90.0266
+RMS of dh, dJ: 0.00051772 0.00059884
+Max of dh, dJ: 0.00657317 0.125096
+
+iteration 95
+Number of threads allocated = 1
+Avg. energy: 90.0391
+RMS of dh, dJ: 0.000828188 0.000563282
+Max of dh, dJ: 0.00859907 0.125027
+
+iteration 96
+Number of threads allocated = 1
+Avg. energy: 90.0638
+RMS of dh, dJ: 0.000458187 0.000577916
+Max of dh, dJ: 0.00410507 0.123965
+
+iteration 97
+Number of threads allocated = 1
+Avg. energy: 90.1991
+RMS of dh, dJ: 0.00046061 0.000591699
+Max of dh, dJ: 0.00484723 0.12523
+
+iteration 98
+Number of threads allocated = 1
+Avg. energy: 90.2184
+RMS of dh, dJ: 0.001615 0.000566897
+Max of dh, dJ: 0.0165771 0.120089
+
+iteration 99
+Number of threads allocated = 1
+Avg. energy: 90.1616
+RMS of dh, dJ: 0.000628675 0.000568802
+Max of dh, dJ: 0.00657382 0.125175
+
+iteration 100
+Number of threads allocated = 1
+Avg. energy: 90.3448
+RMS of dh, dJ: 0.000478989 0.00059692
+Max of dh, dJ: 0.00528412 0.125917
+
+iteration 101
+Number of threads allocated = 1
+Avg. energy: 90.1809
+RMS of dh, dJ: 0.000674472 0.00056399
+Max of dh, dJ: 0.00745063 0.124097
+
+iteration 102
+Number of threads allocated = 1
+Avg. energy: 90.261
+RMS of dh, dJ: 0.000469744 0.000588518
+Max of dh, dJ: 0.00579813 0.124387
+
+iteration 103
+Number of threads allocated = 1
+Avg. energy: 90.1638
+RMS of dh, dJ: 0.000682694 0.000566284
+Max of dh, dJ: 0.00747432 0.123003
+
+iteration 104
+Number of threads allocated = 1
+Avg. energy: 90.1649
+RMS of dh, dJ: 0.000443314 0.000583957
+Max of dh, dJ: 0.00512787 0.12462
+
+iteration 105
+Number of threads allocated = 1
+Avg. energy: 90.0631
+RMS of dh, dJ: 0.0007732 0.000564697
+Max of dh, dJ: 0.00803682 0.122355
+
+iteration 106
+Number of threads allocated = 1
+Avg. energy: 90.3423
+RMS of dh, dJ: 0.000608937 0.000603738
+Max of dh, dJ: 0.00678412 0.126269
+
+iteration 107
+Number of threads allocated = 1
+Avg. energy: 90.1801
+RMS of dh, dJ: 0.000737522 0.000565266
+Max of dh, dJ: 0.0078448 0.123027
+
+iteration 108
+Number of threads allocated = 1
+Avg. energy: 90.0305
+RMS of dh, dJ: 0.000719972 0.000564648
+Max of dh, dJ: 0.00749406 0.12212
+
+iteration 109
+Number of threads allocated = 1
+Avg. energy: 90.2099
+RMS of dh, dJ: 0.00126912 0.000558875
+Max of dh, dJ: 0.0140522 0.118667
+
+iteration 110
+Number of threads allocated = 1
+Avg. energy: 90.2714
+RMS of dh, dJ: 0.000746887 0.000565955
+Max of dh, dJ: 0.00872062 0.121847
+
+iteration 111
+Number of threads allocated = 1
+Avg. energy: 90.1238
+RMS of dh, dJ: 0.00148854 0.000564439
+Max of dh, dJ: 0.0163803 0.120613
+
+iteration 112
+Number of threads allocated = 1
+Avg. energy: 90.156
+RMS of dh, dJ: 0.000461583 0.000587885
+Max of dh, dJ: 0.00475515 0.122245
+
+iteration 113
+Number of threads allocated = 1
+Avg. energy: 90.0216
+RMS of dh, dJ: 0.000827448 0.000562685
+Max of dh, dJ: 0.0101901 0.12016
+
+iteration 114
+Number of threads allocated = 1
+Avg. energy: 90.1264
+RMS of dh, dJ: 0.000670454 0.000567535
+Max of dh, dJ: 0.00818501 0.120535
+
+iteration 115
+Number of threads allocated = 1
+Avg. energy: 90.2046
+RMS of dh, dJ: 0.000500317 0.000602612
+Max of dh, dJ: 0.00522162 0.124754
+
+iteration 116
+Number of threads allocated = 1
+Avg. energy: 90.3038
+RMS of dh, dJ: 0.00065092 0.000567053
+Max of dh, dJ: 0.00699483 0.123191
+
+iteration 117
+Number of threads allocated = 1
+Avg. energy: 90.1634
+RMS of dh, dJ: 0.000498537 0.000597764
+Max of dh, dJ: 0.00552365 0.125363
+
+iteration 118
+Number of threads allocated = 1
+Avg. energy: 90.352
+RMS of dh, dJ: 0.00070754 0.000564806
+Max of dh, dJ: 0.00766157 0.122621
+
+iteration 119
+Number of threads allocated = 1
+Avg. energy: 90.2026
+RMS of dh, dJ: 0.000755555 0.000563059
+Max of dh, dJ: 0.00795844 0.121425
+
+iteration 120
+Number of threads allocated = 1
+Avg. energy: 90.0634
+RMS of dh, dJ: 0.00130409 0.000562737
+Max of dh, dJ: 0.0137475 0.120675
+
+iteration 121
+Number of threads allocated = 1
+Avg. energy: 90.2895
+RMS of dh, dJ: 0.000457447 0.000592552
+Max of dh, dJ: 0.00492618 0.125902
+
+iteration 122
+Number of threads allocated = 1
+Avg. energy: 90.1725
+RMS of dh, dJ: 0.000620232 0.000567012
+Max of dh, dJ: 0.00718288 0.120589
+
+iteration 123
+Number of threads allocated = 1
+Avg. energy: 90.2351
+RMS of dh, dJ: 0.000969955 0.000560623
+Max of dh, dJ: 0.0108073 0.121285
+
+iteration 124
+Number of threads allocated = 1
+Avg. energy: 90.2931
+RMS of dh, dJ: 0.000471855 0.000588775
+Max of dh, dJ: 0.00488406 0.125494
+
+iteration 125
+Number of threads allocated = 1
+Avg. energy: 90.3386
+RMS of dh, dJ: 0.000455744 0.000592217
+Max of dh, dJ: 0.00478412 0.124121
+
+iteration 126
+Number of threads allocated = 1
+Avg. energy: 90.2655
+RMS of dh, dJ: 0.0005684 0.000607595
+Max of dh, dJ: 0.006595 0.127676
+
+iteration 127
+Number of threads allocated = 1
+Avg. energy: 90.1918
+RMS of dh, dJ: 0.000574601 0.00060713
+Max of dh, dJ: 0.00714349 0.124722
+
+iteration 128
+Number of threads allocated = 1
+Avg. energy: 90.2302
+RMS of dh, dJ: 0.00100661 0.000560678
+Max of dh, dJ: 0.0112093 0.120894
+
+iteration 129
+Number of threads allocated = 1
+Avg. energy: 90.1896
+RMS of dh, dJ: 0.00182158 0.000576841
+Max of dh, dJ: 0.0185678 0.121324
+
+iteration 130
+Number of threads allocated = 1
+Avg. energy: 90.3077
+RMS of dh, dJ: 0.000482288 0.000592131
+Max of dh, dJ: 0.0066319 0.120932
+
+iteration 131
+Number of threads allocated = 1
+Avg. energy: 90.1264
+RMS of dh, dJ: 0.000490193 0.000572352
+Max of dh, dJ: 0.00497918 0.120933
+
+iteration 132
+Number of threads allocated = 1
+Avg. energy: 90.1245
+RMS of dh, dJ: 0.00114058 0.000560842
+Max of dh, dJ: 0.012709 0.118394
+
+iteration 133
+Number of threads allocated = 1
+Avg. energy: 90.1528
+RMS of dh, dJ: 0.000658817 0.00056351
+Max of dh, dJ: 0.00804438 0.121941
+
+iteration 134
+Number of threads allocated = 1
+Avg. energy: 90.2897
+RMS of dh, dJ: 0.000681723 0.000615779
+Max of dh, dJ: 0.00798724 0.126955
+
+iteration 135
+Number of threads allocated = 1
+Avg. energy: 90.1851
+RMS of dh, dJ: 0.000498107 0.000573579
+Max of dh, dJ: 0.00493652 0.120526
+
+iteration 136
+Number of threads allocated = 1
+Avg. energy: 90.0834
+RMS of dh, dJ: 0.00081809 0.000625646
+Max of dh, dJ: 0.00936532 0.125488
+
+iteration 137
+Number of threads allocated = 1
+Avg. energy: 90.1401
+RMS of dh, dJ: 0.000658323 0.000564397
+Max of dh, dJ: 0.00819538 0.12112
+
+iteration 138
+Number of threads allocated = 1
+Avg. energy: 90.2208
+RMS of dh, dJ: 0.000555025 0.000566448
+Max of dh, dJ: 0.0051077 0.120441
+
+iteration 139
+Number of threads allocated = 1
+Avg. energy: 90.1605
+RMS of dh, dJ: 0.000538878 0.000569527
+Max of dh, dJ: 0.00599776 0.121691
+
+iteration 140
+Number of threads allocated = 1
+Avg. energy: 90.1612
+RMS of dh, dJ: 0.000405141 0.000582673
+Max of dh, dJ: 0.00310713 0.123214
+
+iteration 141
+Number of threads allocated = 1
+Avg. energy: 90.2532
+RMS of dh, dJ: 0.000709905 0.000561318
+Max of dh, dJ: 0.00678704 0.120738
+
+iteration 142
+Number of threads allocated = 1
+Avg. energy: 90.1313
+RMS of dh, dJ: 0.000491943 0.000574568
+Max of dh, dJ: 0.00497976 0.12166
+
+iteration 143
+Number of threads allocated = 1
+Avg. energy: 90.1804
+RMS of dh, dJ: 0.000594978 0.000564697
+Max of dh, dJ: 0.00602829 0.119754
+
+iteration 144
+Number of threads allocated = 1
+Avg. energy: 90.3194
+RMS of dh, dJ: 0.00163514 0.000567344
+Max of dh, dJ: 0.015554 0.121355
+
+iteration 145
+Number of threads allocated = 1
+Avg. energy: 90.1749
+RMS of dh, dJ: 0.000536146 0.000570195
+Max of dh, dJ: 0.00455967 0.123019
+
+iteration 146
+Number of threads allocated = 1
+Avg. energy: 90.3586
+RMS of dh, dJ: 0.000496794 0.00059491
+Max of dh, dJ: 0.00587786 0.124855
+
+iteration 147
+Number of threads allocated = 1
+Avg. energy: 90.1544
+RMS of dh, dJ: 0.00143153 0.000681801
+Max of dh, dJ: 0.0181587 0.129113
+
+iteration 148
+Number of threads allocated = 1
+Avg. energy: 90.1466
+RMS of dh, dJ: 0.00132707 0.00056064
+Max of dh, dJ: 0.013334 0.11748
+
+iteration 149
+Number of threads allocated = 1
+Avg. energy: 90.0468
+RMS of dh, dJ: 0.00141596 0.000562244
+Max of dh, dJ: 0.0149759 0.12023
+
+iteration 150
+Number of threads allocated = 1
+Avg. energy: 90.1776
+RMS of dh, dJ: 0.000517361 0.000595886
+Max of dh, dJ: 0.00587625 0.125769
+
+iteration 151
+Number of threads allocated = 1
+Avg. energy: 90.1557
+RMS of dh, dJ: 0.0015798 0.000688659
+Max of dh, dJ: 0.0195181 0.131658
+
+iteration 152
+Number of threads allocated = 1
+Avg. energy: 90.1123
+RMS of dh, dJ: 0.000754087 0.000559926
+Max of dh, dJ: 0.00766225 0.120683
+
+iteration 153
+Number of threads allocated = 1
+Avg. energy: 90.1555
+RMS of dh, dJ: 0.000976742 0.000556963
+Max of dh, dJ: 0.0103509 0.119824
+
+iteration 154
+Number of threads allocated = 1
+Avg. energy: 90.2113
+RMS of dh, dJ: 0.000489689 0.000590884
+Max of dh, dJ: 0.00526688 0.126168
+
+iteration 155
+Number of threads allocated = 1
+Avg. energy: 90.3299
+RMS of dh, dJ: 0.000423733 0.000585528
+Max of dh, dJ: 0.00438577 0.123324
+
+iteration 156
+Number of threads allocated = 1
+Avg. energy: 90.1364
+RMS of dh, dJ: 0.00118898 0.000559692
+Max of dh, dJ: 0.0122415 0.117831
+
+iteration 157
+Number of threads allocated = 1
+Avg. energy: 90.0625
+RMS of dh, dJ: 0.000665692 0.000604269
+Max of dh, dJ: 0.00829156 0.123472
+
+iteration 158
+Number of threads allocated = 1
+Avg. energy: 90.3028
+RMS of dh, dJ: 0.000461577 0.00058489
+Max of dh, dJ: 0.00435916 0.123721
+
+iteration 159
+Number of threads allocated = 1
+Avg. energy: 90.2068
+RMS of dh, dJ: 0.000605286 0.000565913
+Max of dh, dJ: 0.00696713 0.122847
+
+iteration 160
+Number of threads allocated = 1
+Avg. energy: 90.1461
+RMS of dh, dJ: 0.000605634 0.000605398
+Max of dh, dJ: 0.00681499 0.122941
+
+iteration 161
+Number of threads allocated = 1
+Avg. energy: 90.2091
+RMS of dh, dJ: 0.000534233 0.000569055
+Max of dh, dJ: 0.00601361 0.123691
+
+iteration 162
+Number of threads allocated = 1
+Avg. energy: 90.2176
+RMS of dh, dJ: 0.000465321 0.000582918
+Max of dh, dJ: 0.00532938 0.12373
+
+iteration 163
+Number of threads allocated = 1
+Avg. energy: 90.0632
+RMS of dh, dJ: 0.00164049 0.000568985
+Max of dh, dJ: 0.0167806 0.119777
+
+iteration 164
+Number of threads allocated = 1
+Avg. energy: 90.3144
+RMS of dh, dJ: 0.00101683 0.000556542
+Max of dh, dJ: 0.00979709 0.119972
+
+iteration 165
+Number of threads allocated = 1
+Avg. energy: 90.1788
+RMS of dh, dJ: 0.000995858 0.000557959
+Max of dh, dJ: 0.0115663 0.11998
+
+iteration 166
+Number of threads allocated = 1
+Avg. energy: 90.1677
+RMS of dh, dJ: 0.000461299 0.000574438
+Max of dh, dJ: 0.00470932 0.121465
+
+iteration 167
+Number of threads allocated = 1
+Avg. energy: 90.0944
+RMS of dh, dJ: 0.00108119 0.000557271
+Max of dh, dJ: 0.0111399 0.118605
+
+iteration 168
+Number of threads allocated = 1
+Avg. energy: 90.2801
+RMS of dh, dJ: 0.000639667 0.000608262
+Max of dh, dJ: 0.00839969 0.128269
+
+iteration 169
+Number of threads allocated = 1
+Avg. energy: 90.0521
+RMS of dh, dJ: 0.000485818 0.000588109
+Max of dh, dJ: 0.00501743 0.123699
+
+iteration 170
+Number of threads allocated = 1
+Avg. energy: 90.2656
+RMS of dh, dJ: 0.00107079 0.000556813
+Max of dh, dJ: 0.0110058 0.11898
+
+iteration 171
+Number of threads allocated = 1
+Avg. energy: 90.0634
+RMS of dh, dJ: 0.000941136 0.000558496
+Max of dh, dJ: 0.0114648 0.122144
+
+iteration 172
+Number of threads allocated = 1
+Avg. energy: 90.3166
+RMS of dh, dJ: 0.000440756 0.000574445
+Max of dh, dJ: 0.00442928 0.124519
+
+iteration 173
+Number of threads allocated = 1
+Avg. energy: 90.0608
+RMS of dh, dJ: 0.00207429 0.000745599
+Max of dh, dJ: 0.0232759 0.136877
+
+iteration 174
+Number of threads allocated = 1
+Avg. energy: 90.03
+RMS of dh, dJ: 0.000881568 0.000557096
+Max of dh, dJ: 0.00895243 0.121761
+
+iteration 175
+Number of threads allocated = 1
+Avg. energy: 90.2647
+RMS of dh, dJ: 0.000950011 0.000555916
+Max of dh, dJ: 0.0105774 0.121683
+
+iteration 176
+Number of threads allocated = 1
+Avg. energy: 90.2324
+RMS of dh, dJ: 0.00170312 0.00057043
+Max of dh, dJ: 0.0177439 0.119581
+
+iteration 177
+Number of threads allocated = 1
+Avg. energy: 90.1571
+RMS of dh, dJ: 0.000899426 0.000560346
+Max of dh, dJ: 0.00884778 0.123433
+
+iteration 178
+Number of threads allocated = 1
+Avg. energy: 90.1423
+RMS of dh, dJ: 0.000711534 0.000560351
+Max of dh, dJ: 0.00837764 0.121051
+
+iteration 179
+Number of threads allocated = 1
+Avg. energy: 90.2574
+RMS of dh, dJ: 0.000453119 0.000581577
+Max of dh, dJ: 0.00610301 0.123926
+
+iteration 180
+Number of threads allocated = 1
+Avg. energy: 90.2368
+RMS of dh, dJ: 0.000519143 0.000570689
+Max of dh, dJ: 0.00644915 0.122972
+
+iteration 181
+Number of threads allocated = 1
+Avg. energy: 90.2976
+RMS of dh, dJ: 0.000435518 0.00057881
+Max of dh, dJ: 0.00413079 0.123387
+
+iteration 182
+Number of threads allocated = 1
+Avg. energy: 90.4555
+RMS of dh, dJ: 0.00109701 0.000556792
+Max of dh, dJ: 0.0116501 0.12212
+
+iteration 183
+Number of threads allocated = 1
+Avg. energy: 90.1385
+RMS of dh, dJ: 0.000447921 0.00057927
+Max of dh, dJ: 0.00576165 0.123699
+
+iteration 184
+Number of threads allocated = 1
+Avg. energy: 90.2879
+RMS of dh, dJ: 0.000883736 0.000627069
+Max of dh, dJ: 0.0100728 0.126215
+
+iteration 185
+Number of threads allocated = 1
+Avg. energy: 90.2758
+RMS of dh, dJ: 0.00102153 0.000557169
+Max of dh, dJ: 0.0112962 0.122597
+
+iteration 186
+Number of threads allocated = 1
+Avg. energy: 90.32
+RMS of dh, dJ: 0.000625032 0.000601027
+Max of dh, dJ: 0.00738531 0.12466
+
+iteration 187
+Number of threads allocated = 1
+Avg. energy: 90.2771
+RMS of dh, dJ: 0.0011666 0.000555672
+Max of dh, dJ: 0.0120214 0.120253
+
+iteration 188
+Number of threads allocated = 1
+Avg. energy: 90.2759
+RMS of dh, dJ: 0.000814715 0.000558712
+Max of dh, dJ: 0.010248 0.12462
+
+iteration 189
+Number of threads allocated = 1
+Avg. energy: 90.1908
+RMS of dh, dJ: 0.000817909 0.000620299
+Max of dh, dJ: 0.00971343 0.127722
+
+iteration 190
+Number of threads allocated = 1
+Avg. energy: 90.2726
+RMS of dh, dJ: 0.00049116 0.000571556
+Max of dh, dJ: 0.00592571 0.121566
+
+iteration 191
+Number of threads allocated = 1
+Avg. energy: 90.1682
+RMS of dh, dJ: 0.000442367 0.000577847
+Max of dh, dJ: 0.00491086 0.123769
+
+iteration 192
+Number of threads allocated = 1
+Avg. energy: 90.1468
+RMS of dh, dJ: 0.0015206 0.00056439
+Max of dh, dJ: 0.0149915 0.11905
+
+iteration 193
+Number of threads allocated = 1
+Avg. energy: 90.2547
+RMS of dh, dJ: 0.00053126 0.000569884
+Max of dh, dJ: 0.00670696 0.122918
+
+iteration 194
+Number of threads allocated = 1
+Avg. energy: 90.3274
+RMS of dh, dJ: 0.00055027 0.000598551
+Max of dh, dJ: 0.00699468 0.125449
+
+iteration 195
+Number of threads allocated = 1
+Avg. energy: 90.2413
+RMS of dh, dJ: 0.00063976 0.000560087
+Max of dh, dJ: 0.00700384 0.12266
+
+iteration 196
+Number of threads allocated = 1
+Avg. energy: 90.4291
+RMS of dh, dJ: 0.000678366 0.000563489
+Max of dh, dJ: 0.00884173 0.121363
+
+iteration 197
+Number of threads allocated = 1
+Avg. energy: 90.2639
+RMS of dh, dJ: 0.00139306 0.000557417
+Max of dh, dJ: 0.0139764 0.122308
+
+iteration 198
+Number of threads allocated = 1
+Avg. energy: 90.2664
+RMS of dh, dJ: 0.000965064 0.000558105
+Max of dh, dJ: 0.0109524 0.121847
+
+iteration 199
+Number of threads allocated = 1
+Avg. energy: 90.3213
+RMS of dh, dJ: 0.000690996 0.000609355
+Max of dh, dJ: 0.00941656 0.127043
+
+iteration 200
+Number of threads allocated = 1
+Avg. energy: 90.196
+RMS of dh, dJ: 0.000731918 0.000558645
+Max of dh, dJ: 0.00854951 0.123449
+
+iteration 201
+Number of threads allocated = 1
+Avg. energy: 90.2745
+RMS of dh, dJ: 0.000737487 0.000561149
+Max of dh, dJ: 0.0088743 0.123105
+
+iteration 202
+Number of threads allocated = 1
+Avg. energy: 90.1988
+RMS of dh, dJ: 0.000731236 0.000559985
+Max of dh, dJ: 0.00733601 0.120245
+
+iteration 203
+Number of threads allocated = 1
+Avg. energy: 90.3456
+RMS of dh, dJ: 0.000471825 0.000577468
+Max of dh, dJ: 0.00511036 0.124004
+
+iteration 204
+Number of threads allocated = 1
+Avg. energy: 90.0756
+RMS of dh, dJ: 0.000751483 0.000558028
+Max of dh, dJ: 0.00870243 0.122058
+
+iteration 205
+Number of threads allocated = 1
+Avg. energy: 90.3251
+RMS of dh, dJ: 0.000764478 0.000558609
+Max of dh, dJ: 0.00819462 0.120855
+
+iteration 206
+Number of threads allocated = 1
+Avg. energy: 90.3774
+RMS of dh, dJ: 0.00105082 0.000555684
+Max of dh, dJ: 0.0109628 0.11937
+
+iteration 207
+Number of threads allocated = 1
+Avg. energy: 90.3896
+RMS of dh, dJ: 0.00104281 0.000558438
+Max of dh, dJ: 0.0108689 0.120941
+
+iteration 208
+Number of threads allocated = 1
+Avg. energy: 90.3853
+RMS of dh, dJ: 0.000505178 0.000589137
+Max of dh, dJ: 0.00545236 0.122558
+
+iteration 209
+Number of threads allocated = 1
+Avg. energy: 90.2466
+RMS of dh, dJ: 0.000468741 0.000583163
+Max of dh, dJ: 0.00415643 0.122082
+
+iteration 210
+Number of threads allocated = 1
+Avg. energy: 90.0614
+RMS of dh, dJ: 0.000790982 0.000555012
+Max of dh, dJ: 0.00793156 0.121089
+
+iteration 211
+Number of threads allocated = 1
+Avg. energy: 90.2286
+RMS of dh, dJ: 0.00155816 0.000689247
+Max of dh, dJ: 0.0198072 0.132385
+
+iteration 212
+Number of threads allocated = 1
+Avg. energy: 90.2431
+RMS of dh, dJ: 0.00061053 0.000559836
+Max of dh, dJ: 0.00633997 0.121512
+
+iteration 213
+Number of threads allocated = 1
+Avg. energy: 90.3047
+RMS of dh, dJ: 0.00149979 0.000562436
+Max of dh, dJ: 0.0155381 0.121394
+
+iteration 214
+Number of threads allocated = 1
+Avg. energy: 90.1231
+RMS of dh, dJ: 0.000482454 0.000569374
+Max of dh, dJ: 0.00535959 0.12273
+
+iteration 215
+Number of threads allocated = 1
+Avg. energy: 90.1174
+RMS of dh, dJ: 0.00131634 0.000669832
+Max of dh, dJ: 0.0143072 0.130627
+
+iteration 216
+Number of threads allocated = 1
+Avg. energy: 90.1145
+RMS of dh, dJ: 0.00111863 0.000555783
+Max of dh, dJ: 0.0124636 0.120167
+
+iteration 217
+Number of threads allocated = 1
+Avg. energy: 90.1685
+RMS of dh, dJ: 0.000648077 0.000561069
+Max of dh, dJ: 0.00702142 0.120801
+
+iteration 218
+Number of threads allocated = 1
+Avg. energy: 90.3125
+RMS of dh, dJ: 0.000541284 0.000563076
+Max of dh, dJ: 0.0054963 0.121316
+
+iteration 219
+Number of threads allocated = 1
+Avg. energy: 90.3279
+RMS of dh, dJ: 0.000552536 0.000590355
+Max of dh, dJ: 0.00610466 0.123894
+
+iteration 220
+Number of threads allocated = 1
+Avg. energy: 90.3562
+RMS of dh, dJ: 0.00170082 0.000569002
+Max of dh, dJ: 0.0176345 0.118331
+
+iteration 221
+Number of threads allocated = 1
+Avg. energy: 90.1521
+RMS of dh, dJ: 0.000499312 0.000564612
+Max of dh, dJ: 0.0054993 0.12323
+
+iteration 222
+Number of threads allocated = 1
+Avg. energy: 90.2772
+RMS of dh, dJ: 0.000441236 0.000576752
+Max of dh, dJ: 0.0045325 0.122073
+
+iteration 223
+Number of threads allocated = 1
+Avg. energy: 90.2127
+RMS of dh, dJ: 0.00185403 0.000574531
+Max of dh, dJ: 0.0209993 0.11741
+
+iteration 224
+Number of threads allocated = 1
+Avg. energy: 90.2585
+RMS of dh, dJ: 0.00046883 0.000576573
+Max of dh, dJ: 0.00574923 0.121949
+
+iteration 225
+Number of threads allocated = 1
+Avg. energy: 90.2518
+RMS of dh, dJ: 0.000460237 0.000572017
+Max of dh, dJ: 0.00480089 0.122793
+
+iteration 226
+Number of threads allocated = 1
+Avg. energy: 90.4092
+RMS of dh, dJ: 0.000591985 0.000600215
+Max of dh, dJ: 0.00631559 0.124855
+
+iteration 227
+Number of threads allocated = 1
+Avg. energy: 90.3249
+RMS of dh, dJ: 0.000430961 0.000580456
+Max of dh, dJ: 0.00478263 0.123051
+
+iteration 228
+Number of threads allocated = 1
+Avg. energy: 90.4075
+RMS of dh, dJ: 0.000532293 0.000564576
+Max of dh, dJ: 0.00610776 0.122019
+
+iteration 229
+Number of threads allocated = 1
+Avg. energy: 90.2214
+RMS of dh, dJ: 0.000977984 0.000553746
+Max of dh, dJ: 0.0107048 0.118699
+
+iteration 230
+Number of threads allocated = 1
+Avg. energy: 90.1663
+RMS of dh, dJ: 0.000455578 0.000570615
+Max of dh, dJ: 0.00414957 0.122238
+
+iteration 231
+Number of threads allocated = 1
+Avg. energy: 90.3304
+RMS of dh, dJ: 0.000677894 0.000558899
+Max of dh, dJ: 0.00847587 0.122144
+
+iteration 232
+Number of threads allocated = 1
+Avg. energy: 90.2482
+RMS of dh, dJ: 0.000475284 0.000567247
+Max of dh, dJ: 0.0046378 0.121965
+
+iteration 233
+Number of threads allocated = 1
+Avg. energy: 90.4933
+RMS of dh, dJ: 0.00047742 0.000567932
+Max of dh, dJ: 0.00475403 0.122199
+
+iteration 234
+Number of threads allocated = 1
+Avg. energy: 90.2342
+RMS of dh, dJ: 0.000477944 0.000584976
+Max of dh, dJ: 0.00460466 0.121136
+
+iteration 235
+Number of threads allocated = 1
+Avg. energy: 90.3544
+RMS of dh, dJ: 0.000954049 0.000554173
+Max of dh, dJ: 0.0105292 0.11909
+
+iteration 236
+Number of threads allocated = 1
+Avg. energy: 90.4101
+RMS of dh, dJ: 0.000678688 0.000607956
+Max of dh, dJ: 0.00800398 0.125533
+
+iteration 237
+Number of threads allocated = 1
+Avg. energy: 90.2183
+RMS of dh, dJ: 0.000569819 0.00056123
+Max of dh, dJ: 0.00603889 0.121081
+
+iteration 238
+Number of threads allocated = 1
+Avg. energy: 90.2183
+RMS of dh, dJ: 0.000777776 0.000555557
+Max of dh, dJ: 0.00765031 0.121238
+
+iteration 239
+Number of threads allocated = 1
+Avg. energy: 90.3584
+RMS of dh, dJ: 0.000476681 0.000565611
+Max of dh, dJ: 0.00464084 0.120519
+
+iteration 240
+Number of threads allocated = 1
+Avg. energy: 90.2698
+RMS of dh, dJ: 0.000456271 0.000585276
+Max of dh, dJ: 0.00478434 0.122629
+
+iteration 241
+Number of threads allocated = 1
+Avg. energy: 90.2998
+RMS of dh, dJ: 0.000844944 0.000621882
+Max of dh, dJ: 0.00986187 0.128463
+
+iteration 242
+Number of threads allocated = 1
+Avg. energy: 90.2299
+RMS of dh, dJ: 0.000866526 0.000554734
+Max of dh, dJ: 0.00960343 0.119074
+
+iteration 243
+Number of threads allocated = 1
+Avg. energy: 90.2469
+RMS of dh, dJ: 0.000436269 0.000572344
+Max of dh, dJ: 0.00407053 0.121496
+
+iteration 244
+Number of threads allocated = 1
+Avg. energy: 90.3053
+RMS of dh, dJ: 0.000476144 0.000579071
+Max of dh, dJ: 0.00493162 0.121879
+
+iteration 245
+Number of threads allocated = 1
+Avg. energy: 90.2946
+RMS of dh, dJ: 0.000892424 0.000555389
+Max of dh, dJ: 0.0106152 0.116855
+
+iteration 246
+Number of threads allocated = 1
+Avg. energy: 90.2557
+RMS of dh, dJ: 0.000802692 0.000558971
+Max of dh, dJ: 0.00926733 0.122339
+
+iteration 247
+Number of threads allocated = 1
+Avg. energy: 90.2554
+RMS of dh, dJ: 0.000763434 0.000610344
+Max of dh, dJ: 0.0116212 0.125198
+
+iteration 248
+Number of threads allocated = 1
+Avg. energy: 90.3881
+RMS of dh, dJ: 0.000554083 0.000562766
+Max of dh, dJ: 0.00834759 0.122441
+
+iteration 249
+Number of threads allocated = 1
+Avg. energy: 90.254
+RMS of dh, dJ: 0.000682373 0.000602914
+Max of dh, dJ: 0.00813531 0.125627
+
+iteration 250
+Number of threads allocated = 1
+Avg. energy: 90.1443
+RMS of dh, dJ: 0.00202919 0.000584728
+Max of dh, dJ: 0.0209245 0.119214
+
+iteration 251
+Number of threads allocated = 1
+Avg. energy: 90.3428
+RMS of dh, dJ: 0.000438346 0.000566976
+Max of dh, dJ: 0.00512127 0.122113
+
+iteration 252
+Number of threads allocated = 1
+Avg. energy: 90.3383
+RMS of dh, dJ: 0.0007336 0.000558079
+Max of dh, dJ: 0.00739561 0.117152
+
+iteration 253
+Number of threads allocated = 1
+Avg. energy: 90.1619
+RMS of dh, dJ: 0.000840244 0.000553755
+Max of dh, dJ: 0.00872046 0.118097
+
+iteration 254
+Number of threads allocated = 1
+Avg. energy: 90.281
+RMS of dh, dJ: 0.00123656 0.000648839
+Max of dh, dJ: 0.0142916 0.128151
+
+iteration 255
+Number of threads allocated = 1
+Avg. energy: 90.2168
+RMS of dh, dJ: 0.00132591 0.000556962
+Max of dh, dJ: 0.0138587 0.116917
+
+iteration 256
+Number of threads allocated = 1
+Avg. energy: 90.2552
+RMS of dh, dJ: 0.00053195 0.000565212
+Max of dh, dJ: 0.00610476 0.122363
+
+iteration 257
+Number of threads allocated = 1
+Avg. energy: 90.2223
+RMS of dh, dJ: 0.000487397 0.000564835
+Max of dh, dJ: 0.00500138 0.122449
+
+iteration 258
+Number of threads allocated = 1
+Avg. energy: 90.0444
+RMS of dh, dJ: 0.000483722 0.000569452
+Max of dh, dJ: 0.00459213 0.119746
+
+iteration 259
+Number of threads allocated = 1
+Avg. energy: 90.2033
+RMS of dh, dJ: 0.000950729 0.000552535
+Max of dh, dJ: 0.0119094 0.118183
+Std. errors: 0.00335618 0.000569022
+Model difference is within sampling error. Increasing sampling...
+MC steps per iteration: 256000
+
+iteration 260
+Number of threads allocated = 1
+Avg. energy: 90.2279
+RMS of dh, dJ: 0.000335884 0.000571299
+Max of dh, dJ: 0.00353078 0.121129
+
+iteration 261
+Number of threads allocated = 1
+Avg. energy: 90.2529
+RMS of dh, dJ: 0.000520737 0.000557162
+Max of dh, dJ: 0.00628704 0.122382
+
+iteration 262
+Number of threads allocated = 1
+Avg. energy: 90.1996
+RMS of dh, dJ: 0.00106796 0.000552507
+Max of dh, dJ: 0.0111682 0.118195
+
+iteration 263
+Number of threads allocated = 1
+Avg. energy: 90.2688
+RMS of dh, dJ: 0.000759897 0.000551158
+Max of dh, dJ: 0.00872827 0.118925
+
+iteration 264
+Number of threads allocated = 1
+Avg. energy: 90.2456
+RMS of dh, dJ: 0.000916177 0.000551203
+Max of dh, dJ: 0.0104065 0.119035
+
+iteration 265
+Number of threads allocated = 1
+Avg. energy: 90.3574
+RMS of dh, dJ: 0.00042922 0.000564424
+Max of dh, dJ: 0.00543679 0.121262
+
+iteration 266
+Number of threads allocated = 1
+Avg. energy: 90.2966
+RMS of dh, dJ: 0.000509129 0.000591149
+Max of dh, dJ: 0.00630203 0.124277
+
+iteration 267
+Number of threads allocated = 1
+Avg. energy: 90.2787
+RMS of dh, dJ: 0.000491537 0.000556319
+Max of dh, dJ: 0.00561499 0.121293
+
+iteration 268
+Number of threads allocated = 1
+Avg. energy: 90.3226
+RMS of dh, dJ: 0.000663439 0.000553342
+Max of dh, dJ: 0.00715796 0.121277
+
+iteration 269
+Number of threads allocated = 1
+Avg. energy: 90.2963
+RMS of dh, dJ: 0.000453562 0.000586649
+Max of dh, dJ: 0.00576812 0.124047
+
+iteration 270
+Number of threads allocated = 1
+Avg. energy: 90.2931
+RMS of dh, dJ: 0.000363385 0.00057706
+Max of dh, dJ: 0.00443757 0.121936
+
+iteration 271
+Number of threads allocated = 1
+Avg. energy: 90.2575
+RMS of dh, dJ: 0.00175115 0.000571811
+Max of dh, dJ: 0.0188112 0.119206
+
+iteration 272
+Number of threads allocated = 1
+Avg. energy: 90.4665
+RMS of dh, dJ: 0.000388066 0.000582884
+Max of dh, dJ: 0.00468171 0.124855
+
+iteration 273
+Number of threads allocated = 1
+Avg. energy: 90.3301
+RMS of dh, dJ: 0.000354699 0.000570944
+Max of dh, dJ: 0.00506061 0.12166
+
+iteration 274
+Number of threads allocated = 1
+Avg. energy: 90.3559
+RMS of dh, dJ: 0.00113303 0.000641775
+Max of dh, dJ: 0.0124361 0.12816
+
+iteration 275
+Number of threads allocated = 1
+Avg. energy: 90.2211
+RMS of dh, dJ: 0.000534066 0.000553791
+Max of dh, dJ: 0.00601343 0.121007
+
+iteration 276
+Number of threads allocated = 1
+Avg. energy: 90.2926
+RMS of dh, dJ: 0.00048596 0.000557886
+Max of dh, dJ: 0.00582324 0.12157
+
+iteration 277
+Number of threads allocated = 1
+Avg. energy: 90.3659
+RMS of dh, dJ: 0.000906675 0.000552545
+Max of dh, dJ: 0.0102869 0.121406
+
+iteration 278
+Number of threads allocated = 1
+Avg. energy: 90.3127
+RMS of dh, dJ: 0.000389358 0.000580775
+Max of dh, dJ: 0.00577741 0.1221
+
+iteration 279
+Number of threads allocated = 1
+Avg. energy: 90.2912
+RMS of dh, dJ: 0.000867703 0.000551609
+Max of dh, dJ: 0.0101483 0.121503
+
+iteration 280
+Number of threads allocated = 1
+Avg. energy: 90.31
+RMS of dh, dJ: 0.000588804 0.000552228
+Max of dh, dJ: 0.00632593 0.118828
+
+iteration 281
+Number of threads allocated = 1
+Avg. energy: 90.2523
+RMS of dh, dJ: 0.000400617 0.000578135
+Max of dh, dJ: 0.00463016 0.126031
+
+iteration 282
+Number of threads allocated = 1
+Avg. energy: 90.2344
+RMS of dh, dJ: 0.000528428 0.0005576
+Max of dh, dJ: 0.00545577 0.122504
+
+iteration 283
+Number of threads allocated = 1
+Avg. energy: 90.2866
+RMS of dh, dJ: 0.000658819 0.000551356
+Max of dh, dJ: 0.00746655 0.119566
+
+iteration 284
+Number of threads allocated = 1
+Avg. energy: 90.289
+RMS of dh, dJ: 0.000565157 0.000552002
+Max of dh, dJ: 0.00709639 0.120676
+
+iteration 285
+Number of threads allocated = 1
+Avg. energy: 90.2943
+RMS of dh, dJ: 0.000736455 0.000604265
+Max of dh, dJ: 0.00908719 0.127445
+
+iteration 286
+Number of threads allocated = 1
+Avg. energy: 90.3621
+RMS of dh, dJ: 0.000388214 0.000561161
+Max of dh, dJ: 0.00367842 0.123457
+
+iteration 287
+Number of threads allocated = 1
+Avg. energy: 90.3051
+RMS of dh, dJ: 0.000362339 0.000565906
+Max of dh, dJ: 0.00360173 0.121812
+
+iteration 288
+Number of threads allocated = 1
+Avg. energy: 90.2777
+RMS of dh, dJ: 0.00130967 0.000554579
+Max of dh, dJ: 0.0133214 0.119632
+
+iteration 289
+Number of threads allocated = 1
+Avg. energy: 90.2518
+RMS of dh, dJ: 0.000359138 0.000565555
+Max of dh, dJ: 0.00380293 0.121293
+
+iteration 290
+Number of threads allocated = 1
+Avg. energy: 90.3378
+RMS of dh, dJ: 0.00043605 0.000557761
+Max of dh, dJ: 0.00497056 0.121933
+
+iteration 291
+Number of threads allocated = 1
+Avg. energy: 90.324
+RMS of dh, dJ: 0.000361776 0.000563824
+Max of dh, dJ: 0.00388061 0.122152
+
+iteration 292
+Number of threads allocated = 1
+Avg. energy: 90.2443
+RMS of dh, dJ: 0.000315713 0.000567779
+Max of dh, dJ: 0.00320137 0.123023
+
+iteration 293
+Number of threads allocated = 1
+Avg. energy: 90.3215
+RMS of dh, dJ: 0.000433702 0.000560512
+Max of dh, dJ: 0.00465607 0.121456
+
+iteration 294
+Number of threads allocated = 1
+Avg. energy: 90.277
+RMS of dh, dJ: 0.00110761 0.000550905
+Max of dh, dJ: 0.0131189 0.119679
+
+iteration 295
+Number of threads allocated = 1
+Avg. energy: 90.2268
+RMS of dh, dJ: 0.000400433 0.000560329
+Max of dh, dJ: 0.00427756 0.122238
+
+iteration 296
+Number of threads allocated = 1
+Avg. energy: 90.4138
+RMS of dh, dJ: 0.000446554 0.000586001
+Max of dh, dJ: 0.00674735 0.123666
+
+iteration 297
+Number of threads allocated = 1
+Avg. energy: 90.2723
+RMS of dh, dJ: 0.000414905 0.000558258
+Max of dh, dJ: 0.00498702 0.123687
+
+iteration 298
+Number of threads allocated = 1
+Avg. energy: 90.2887
+RMS of dh, dJ: 0.000689757 0.000552252
+Max of dh, dJ: 0.00758764 0.120035
+
+iteration 299
+Number of threads allocated = 1
+Avg. energy: 90.2933
+RMS of dh, dJ: 0.000447303 0.00055883
+Max of dh, dJ: 0.00482619 0.120518
+
+iteration 300
+Number of threads allocated = 1
+Avg. energy: 90.348
+RMS of dh, dJ: 0.000330176 0.000567609
+Max of dh, dJ: 0.00378717 0.122676
+
+iteration 301
+Number of threads allocated = 1
+Avg. energy: 90.3076
+RMS of dh, dJ: 0.000634211 0.000550241
+Max of dh, dJ: 0.00733077 0.120195
+
+iteration 302
+Number of threads allocated = 1
+Avg. energy: 90.2706
+RMS of dh, dJ: 0.000340647 0.000568091
+Max of dh, dJ: 0.00339233 0.123008
+
+iteration 303
+Number of threads allocated = 1
+Avg. energy: 90.3017
+RMS of dh, dJ: 0.000624241 0.000552995
+Max of dh, dJ: 0.00702998 0.119042
+
+iteration 304
+Number of threads allocated = 1
+Avg. energy: 90.3781
+RMS of dh, dJ: 0.000696035 0.000604676
+Max of dh, dJ: 0.00884967 0.125881
+
+iteration 305
+Number of threads allocated = 1
+Avg. energy: 90.1994
+RMS of dh, dJ: 0.000864663 0.000549842
+Max of dh, dJ: 0.00899483 0.121441
+
+iteration 306
+Number of threads allocated = 1
+Avg. energy: 90.2001
+RMS of dh, dJ: 0.000628985 0.000553322
+Max of dh, dJ: 0.00767452 0.120344
+
+iteration 307
+Number of threads allocated = 1
+Avg. energy: 90.2987
+RMS of dh, dJ: 0.000583948 0.000554798
+Max of dh, dJ: 0.00634155 0.121663
+
+iteration 308
+Number of threads allocated = 1
+Avg. energy: 90.4107
+RMS of dh, dJ: 0.000548579 0.000591929
+Max of dh, dJ: 0.00599892 0.124449
+
+iteration 309
+Number of threads allocated = 1
+Avg. energy: 90.3917
+RMS of dh, dJ: 0.000707941 0.000603959
+Max of dh, dJ: 0.00839349 0.12703
+
+iteration 310
+Number of threads allocated = 1
+Avg. energy: 90.2355
+RMS of dh, dJ: 0.000352263 0.000567004
+Max of dh, dJ: 0.00411212 0.121143
+
+iteration 311
+Number of threads allocated = 1
+Avg. energy: 90.2017
+RMS of dh, dJ: 0.000882257 0.00054915
+Max of dh, dJ: 0.0102337 0.119094
+
+iteration 312
+Number of threads allocated = 1
+Avg. energy: 90.3032
+RMS of dh, dJ: 0.00112403 0.000551178
+Max of dh, dJ: 0.0117751 0.118906
+
+iteration 313
+Number of threads allocated = 1
+Avg. energy: 90.3393
+RMS of dh, dJ: 0.00044223 0.00058424
+Max of dh, dJ: 0.00436611 0.122512
+
+iteration 314
+Number of threads allocated = 1
+Avg. energy: 90.2474
+RMS of dh, dJ: 0.000405775 0.000578328
+Max of dh, dJ: 0.00527872 0.12259
+
+iteration 315
+Number of threads allocated = 1
+Avg. energy: 90.2971
+RMS of dh, dJ: 0.000649683 0.000551031
+Max of dh, dJ: 0.00804077 0.11839
+
+iteration 316
+Number of threads allocated = 1
+Avg. energy: 90.435
+RMS of dh, dJ: 0.000350336 0.000571521
+Max of dh, dJ: 0.00365106 0.122491
+
+iteration 317
+Number of threads allocated = 1
+Avg. energy: 90.3508
+RMS of dh, dJ: 0.000397917 0.000577067
+Max of dh, dJ: 0.00457317 0.12191
+
+iteration 318
+Number of threads allocated = 1
+Avg. energy: 90.3626
+RMS of dh, dJ: 0.000476845 0.000555608
+Max of dh, dJ: 0.00475181 0.122637
+
+iteration 319
+Number of threads allocated = 1
+Avg. energy: 90.3433
+RMS of dh, dJ: 0.000573602 0.00055122
+Max of dh, dJ: 0.0072253 0.119039
+
+iteration 320
+Number of threads allocated = 1
+Avg. energy: 90.2864
+RMS of dh, dJ: 0.000353707 0.00057254
+Max of dh, dJ: 0.00546219 0.121389
+
+iteration 321
+Number of threads allocated = 1
+Avg. energy: 90.3556
+RMS of dh, dJ: 0.000347327 0.000561644
+Max of dh, dJ: 0.00348218 0.123469
+
+iteration 322
+Number of threads allocated = 1
+Avg. energy: 90.3136
+RMS of dh, dJ: 0.000981261 0.000548968
+Max of dh, dJ: 0.0111009 0.118933
+
+iteration 323
+Number of threads allocated = 1
+Avg. energy: 90.3219
+RMS of dh, dJ: 0.000398586 0.000560928
+Max of dh, dJ: 0.00458995 0.1215
+
+iteration 324
+Number of threads allocated = 1
+Avg. energy: 90.2934
+RMS of dh, dJ: 0.00032515 0.000565132
+Max of dh, dJ: 0.00322551 0.122715
+
+iteration 325
+Number of threads allocated = 1
+Avg. energy: 90.3666
+RMS of dh, dJ: 0.000501913 0.00058731
+Max of dh, dJ: 0.00589578 0.124869
+
+iteration 326
+Number of threads allocated = 1
+Avg. energy: 90.1975
+RMS of dh, dJ: 0.0007945 0.000548007
+Max of dh, dJ: 0.00915165 0.122476
+
+iteration 327
+Number of threads allocated = 1
+Avg. energy: 90.2498
+RMS of dh, dJ: 0.00126168 0.000553115
+Max of dh, dJ: 0.0136394 0.117992
+
+iteration 328
+Number of threads allocated = 1
+Avg. energy: 90.365
+RMS of dh, dJ: 0.000343951 0.000563456
+Max of dh, dJ: 0.0037483 0.12318
+
+iteration 329
+Number of threads allocated = 1
+Avg. energy: 90.3113
+RMS of dh, dJ: 0.000589082 0.000587975
+Max of dh, dJ: 0.00635714 0.125754
+
+iteration 330
+Number of threads allocated = 1
+Avg. energy: 90.272
+RMS of dh, dJ: 0.000332803 0.000562161
+Max of dh, dJ: 0.00356508 0.122367
+
+iteration 331
+Number of threads allocated = 1
+Avg. energy: 90.3516
+RMS of dh, dJ: 0.000817491 0.000548177
+Max of dh, dJ: 0.00945186 0.121129
+
+iteration 332
+Number of threads allocated = 1
+Avg. energy: 90.2464
+RMS of dh, dJ: 0.000354175 0.000562018
+Max of dh, dJ: 0.00350022 0.12148
+
+iteration 333
+Number of threads allocated = 1
+Avg. energy: 90.3091
+RMS of dh, dJ: 0.000407945 0.000558511
+Max of dh, dJ: 0.00418623 0.122172
+
+iteration 334
+Number of threads allocated = 1
+Avg. energy: 90.2822
+RMS of dh, dJ: 0.000426814 0.000557115
+Max of dh, dJ: 0.0058108 0.121117
+
+iteration 335
+Number of threads allocated = 1
+Avg. energy: 90.3906
+RMS of dh, dJ: 0.00041801 0.000559149
+Max of dh, dJ: 0.00487984 0.122187
+
+iteration 336

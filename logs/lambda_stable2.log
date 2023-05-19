@@ -1,0 +1,459 @@
+INPUT PARAMETERS:
+msa_name /data/wangd17/contact_seqs/l-repressor/lambda_contacts_stable.dat
+out_name lambda_stable.bm_param
+folder_name lambda_stable
+scratch_dir /data/wangd17/Ising-Model_biowulf/scratch/
+input_name none
+mc_init random
+lambda 0.00001
+myseed 1
+max_iter 10000000
+mc_steps 1000
+eps0_h 0.02
+eps0_J 0.002
+adaptive_stepsize_on 1
+adaptive_sampling_on 1
+eps_inc 1.5
+eps_dec 0.6
+eps_min_h 0.001
+eps_max_h 2.5
+eps_min_J 0.00001
+eps_max_J_N 2.5
+gamma 0.1
+cutoff_freq 0.05
+delta 0.0
+symmetrize_on 0
+do_lowmem_fill 1
+cutoff_rmsd 0.002
+conv_type rmsd
+verbose 1
+record_freq 50
+
+/data/wangd17/contact_seqs/l-repressor/lambda_contacts_stable.dat
+Sequence length: 2926
+random
+conv type: rmsd
+Doing low-memory frequency fill...
+0
+10000
+20000
+30000
+40000
+50000
+60000
+70000
+80000
+90000
+100000
+110000
+120000
+130000
+140000
+150000
+160000
+170000
+180000
+190000
+200000
+210000
+220000
+230000
+240000
+250000
+260000
+270000
+280000
+290000
+300000
+310000
+320000
+330000
+340000
+350000
+360000
+370000
+380000
+390000
+400000
+410000
+420000
+430000
+440000
+450000
+460000
+470000
+480000
+490000
+500000
+510000
+520000
+530000
+540000
+550000
+560000
+570000
+580000
+590000
+600000
+610000
+620000
+630000
+640000
+650000
+660000
+670000
+680000
+690000
+700000
+710000
+720000
+730000
+740000
+750000
+760000
+770000
+780000
+790000
+800000
+810000
+820000
+830000
+840000
+850000
+860000
+870000
+880000
+890000
+900000
+910000
+920000
+930000
+940000
+950000
+960000
+970000
+980000
+990000
+1000000
+1010000
+1020000
+1030000
+1040000
+1050000
+1060000
+1070000
+1080000
+1090000
+1100000
+1110000
+1120000
+1130000
+1140000
+1150000
+1160000
+1170000
+1180000
+1190000
+1200000
+1210000
+1220000
+1230000
+1240000
+1250000
+1260000
+1270000
+1280000
+1290000
+1300000
+1310000
+1320000
+1330000
+1340000
+1350000
+1360000
+1370000
+1380000
+1390000
+1400000
+1410000
+1420000
+1430000
+1440000
+1450000
+1460000
+1470000
+1480000
+1490000
+1500000
+1510000
+1520000
+1530000
+1540000
+1550000
+1560000
+1570000
+1580000
+1590000
+1600000
+1610000
+1620000
+1630000
+1640000
+1650000
+1660000
+1670000
+1680000
+1690000
+1700000
+1710000
+1720000
+1730000
+1740000
+1750000
+1760000
+1770000
+1780000
+1790000
+1800000
+1810000
+1820000
+1830000
+1840000
+1850000
+1860000
+1870000
+1880000
+1890000
+1900000
+1910000
+1920000
+1930000
+1940000
+No. seqs: 1944602
+Should be N: 50.2896
+Fitting model.
+
+iteration 0
+Number of threads allocated = 1
+Avg. energy: 101.372
+RMS of dh, dJ: 0.0287113 0.00363527
+Max of dh, dJ: 0.424436 0.615492
+
+iteration 1
+Number of threads allocated = 1
+Avg. energy: 102.358
+RMS of dh, dJ: 0.0287915 0.00364465
+Max of dh, dJ: 0.436624 0.605492
+
+iteration 2
+Number of threads allocated = 1
+Avg. energy: 101.776
+RMS of dh, dJ: 0.0281344 0.00358329
+Max of dh, dJ: 0.417435 0.606719
+
+iteration 3
+Number of threads allocated = 1
+Avg. energy: 100.954
+RMS of dh, dJ: 0.0279477 0.00356226
+Max of dh, dJ: 0.384435 0.577719
+
+iteration 4
+Number of threads allocated = 1
+Avg. energy: 101.684
+RMS of dh, dJ: 0.027359 0.00352007
+Max of dh, dJ: 0.393395 0.587719
+
+iteration 5
+Number of threads allocated = 1
+Avg. energy: 103.458
+RMS of dh, dJ: 0.0264746 0.00343135
+Max of dh, dJ: 0.383433 0.576719
+
+iteration 6
+Number of threads allocated = 1
+Avg. energy: 101.013
+RMS of dh, dJ: 0.0250342 0.00329336
+Max of dh, dJ: 0.391393 0.575719
+
+iteration 7
+Number of threads allocated = 1
+Avg. energy: 101.672
+RMS of dh, dJ: 0.0237843 0.00317434
+Max of dh, dJ: 0.35743 0.535719
+
+iteration 8
+Number of threads allocated = 1
+Avg. energy: 99.0197
+RMS of dh, dJ: 0.0219929 0.00300277
+Max of dh, dJ: 0.340617 0.538492
+
+iteration 9
+Number of threads allocated = 1
+Avg. energy: 98.6973
+RMS of dh, dJ: 0.0188502 0.00268154
+Max of dh, dJ: 0.264424 0.433492
+
+iteration 10
+Number of threads allocated = 1
+Avg. energy: 95.6167
+RMS of dh, dJ: 0.0148843 0.00224278
+Max of dh, dJ: 0.20642 0.378719
+
+iteration 11
+Number of threads allocated = 1
+Avg. energy: 92.8699
+RMS of dh, dJ: 0.0111175 0.00180482
+Max of dh, dJ: 0.183604 0.314492
+Std. errors: 0.0148855 0.00188051
+Model difference is within sampling error. Increasing sampling...
+MC steps per iteration: 2000
+
+iteration 12
+Number of threads allocated = 1
+Avg. energy: 88.8707
+RMS of dh, dJ: 0.00718062 0.00134313
+Max of dh, dJ: 0.113872 0.247714
+Std. errors: 0.0105574 0.00136599
+Model difference is within sampling error. Increasing sampling...
+MC steps per iteration: 4000
+
+iteration 13
+Number of threads allocated = 1
+Avg. energy: 85.0506
+RMS of dh, dJ: 0.00383371 0.000898744
+Max of dh, dJ: 0.0629036 0.184989
+Std. errors: 0.00750194 0.00100063
+Model difference is within sampling error. Increasing sampling...
+MC steps per iteration: 8000
+
+iteration 14
+Number of threads allocated = 1
+Avg. energy: 83.1915
+RMS of dh, dJ: 0.0024895 0.000788149
+Max of dh, dJ: 0.0325249 0.189839
+
+iteration 15
+Number of threads allocated = 1
+Avg. energy: 82.7028
+RMS of dh, dJ: 0.00225542 0.000749128
+Max of dh, dJ: 0.0268243 0.186614
+
+iteration 16
+Number of threads allocated = 1
+Avg. energy: 82.2998
+RMS of dh, dJ: 0.00221555 0.000759765
+Max of dh, dJ: 0.0222213 0.181864
+
+iteration 17
+Number of threads allocated = 1
+Avg. energy: 81.8631
+RMS of dh, dJ: 0.00197098 0.000737102
+Max of dh, dJ: 0.0188462 0.181123
+
+iteration 18
+Number of threads allocated = 1
+Avg. energy: 82.0048
+RMS of dh, dJ: 0.00197415 0.000720626
+Max of dh, dJ: 0.0212212 0.181964
+
+iteration 19
+Number of threads allocated = 1
+Avg. energy: 81.8274
+RMS of dh, dJ: 0.00201903 0.000735253
+Max of dh, dJ: 0.024361 0.179739
+
+iteration 20
+Number of threads allocated = 1
+Avg. energy: 82.1754
+RMS of dh, dJ: 0.00197222 0.000722143
+Max of dh, dJ: 0.0186697 0.184364
+
+iteration 21
+Number of threads allocated = 1
+Avg. energy: 82.12
+RMS of dh, dJ: 0.00189158 0.00072808
+Max of dh, dJ: 0.030346 0.182614
+
+iteration 22
+Number of threads allocated = 1
+Avg. energy: 81.2922
+RMS of dh, dJ: 0.00186438 0.000716725
+Max of dh, dJ: 0.0160979 0.185239
+Std. errors: 0.00531769 0.000716842
+Model difference is within sampling error. Increasing sampling...
+MC steps per iteration: 16000
+
+iteration 23
+Number of threads allocated = 1
+Avg. energy: 81.7599
+RMS of dh, dJ: 0.00146256 0.000696978
+Max of dh, dJ: 0.016908 0.179989
+
+iteration 24
+Number of threads allocated = 1
+Avg. energy: 81.9039
+RMS of dh, dJ: 0.00150479 0.000697397
+Max of dh, dJ: 0.0141464 0.176089
+
+iteration 25
+Number of threads allocated = 1
+Avg. energy: 82.0207
+RMS of dh, dJ: 0.00137167 0.000689951
+Max of dh, dJ: 0.0118601 0.181552
+
+iteration 26
+Number of threads allocated = 1
+Avg. energy: 81.64
+RMS of dh, dJ: 0.00146167 0.000695017
+Max of dh, dJ: 0.0173448 0.177364
+
+iteration 27
+Number of threads allocated = 1
+Avg. energy: 81.7696
+RMS of dh, dJ: 0.00137626 0.000697578
+Max of dh, dJ: 0.0133277 0.182552
+
+iteration 28
+Number of threads allocated = 1
+Avg. energy: 82.2353
+RMS of dh, dJ: 0.00135321 0.00069609
+Max of dh, dJ: 0.0112581 0.180177
+
+iteration 29
+Number of threads allocated = 1
+Avg. energy: 81.6929
+RMS of dh, dJ: 0.00135756 0.000693925
+Max of dh, dJ: 0.0121296 0.184739
+
+iteration 30
+Number of threads allocated = 1
+Avg. energy: 81.8376
+RMS of dh, dJ: 0.0013534 0.000693084
+Max of dh, dJ: 0.0127291 0.187114
+
+iteration 31
+Number of threads allocated = 1
+Avg. energy: 81.7173
+RMS of dh, dJ: 0.00131403 0.000695183
+Max of dh, dJ: 0.0126421 0.188989
+
+iteration 32
+Number of threads allocated = 1
+Avg. energy: 81.697
+RMS of dh, dJ: 0.00132229 0.000696925
+Max of dh, dJ: 0.0124693 0.181927
+
+iteration 33
+Number of threads allocated = 1
+Avg. energy: 82.1787
+RMS of dh, dJ: 0.00131694 0.000697976
+Max of dh, dJ: 0.0110635 0.185677
+
+iteration 34
+Number of threads allocated = 1
+Avg. energy: 82.4225
+RMS of dh, dJ: 0.00127448 0.000693095
+Max of dh, dJ: 0.0143643 0.183239
+Converged!
+RMS of dh, dJ, tot: 0.00127448 0.000693095 0.00196758
+Max of |dh|, |dJ|: 0.0143643 0.183239
