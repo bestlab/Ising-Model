@@ -58,7 +58,7 @@ double cutoff_freq;
 double cutoff_rmsd=2e-3;
 bool adaptive_stepsize_on;
 bool adaptive_sampling_on;
-bool symmetrize_on; 
+bool symmetrize_on;
 bool verbose;
 double delta=0.2; //reweighting threshold
 int do_lowmem_fill=0;
@@ -79,7 +79,7 @@ int main(int argc, char *argv[]){
     if(fs::exists(conf_name)){
       read_inputs(conf_name);
     }
-    else{ 
+    else{
       printf("ERROR: conf file does not exist! Exiting.\n");
       exit(-1);
     }
@@ -93,18 +93,17 @@ int main(int argc, char *argv[]){
 
   //Set up random number generator
   init_rng(myseed);
-  
+
   //Memory allocation
   int N;
-  int q;
 
   std::cout << msa_name << std::endl;
-  read_Nq(msa_name, &N, &q);
-  model model(N, q, lambda, symmetrize_on, mc_init);
+  read_Nq(msa_name, &N);
+  model model(N, lambda, symmetrize_on, mc_init);
   std::cout << model.mc_init << std::endl;
   std::cout << "conv type: " << conv_type << std::endl;
-  arma::mat msa_freq(model.N,model.q,arma::fill::zeros);
-  arma::cube msa_corr(model.q, model.q, model.N*(model.N-1)/2,arma::fill::zeros);
+  arma::vec msa_freq(model.N,arma::fill::zeros);
+  arma::vec msa_corr(model.N*(model.N-1)/2,arma::fill::zeros);
 
   //Define data output directory
   folder_name_orig = folder_name;
@@ -131,7 +130,7 @@ int main(int argc, char *argv[]){
     std::cout << "check: " << thename << std::endl;
 
     folder_name += "_input=" + thename;
-  }  
+  }
   if(is_restart){
     folder_name += "_restart" + std::to_string(num_restarts);
   }
@@ -156,7 +155,7 @@ int main(int argc, char *argv[]){
       lowmem_fill_freq(msa_name, msa_freq, msa_corr, N);
     }
     else{
-      std::vector<int> msa_seqs = read_msa(msa_name, N, q);
+      std::vector<int> msa_seqs = read_msa(msa_name, N);
       int nseq = msa_seqs.size()/N;
       std::cout << nseq << " sequences" << std::endl;
       std::vector<double> weights = get_weights(msa_seqs, nseq, delta);
@@ -177,7 +176,7 @@ int main(int argc, char *argv[]){
 
   //Print parameters to file
   write_params(model,output_dir+out_name);
-  
+
   return 1;
 }
 
@@ -185,37 +184,35 @@ int main(int argc, char *argv[]){
  * METHODS *
  ***********/
 
-void init_default(model &mymodel, arma::mat &msa_freq){
+void init_default(model &mymodel, arma::vec &msa_freq){
   //Initialize h's to be consistent with single-site frequencies
   for(int i=0; i<mymodel.N; i++){
-    for(int a=0; a<mymodel.q; a++){
-      mymodel.h(i,a) = log(msa_freq(i,a)+0.0001); //Small regularization to avoid divergence
-    }
+    mymodel.h(i) = log(-1*msa_freq(i,a)+0.0001); //Small regularization to avoid divergence
   }
 }
 
-void fit(model &mymodel, arma::mat &msa_freq, arma::cube &msa_corr, int nr){
+void fit(model &mymodel, arma::vec &msa_freq, arma::vec &msa_corr, int nr){
 
   bool converged = false;
   int niter=0;
 
   //Initialize adaptive learning rates
-  arma::mat alpha_h(mymodel.N,mymodel.q,arma::fill::ones);
-  arma::cube alpha_J(mymodel.q, mymodel.q, mymodel.N*(mymodel.N-1)/2,arma::fill::ones);
+  arma::vec alpha_h(mymodel.N,arma::fill::ones);
+  arma::vec alpha_J(mymodel.N*(mymodel.N-1)/2,arma::fill::ones);
   alpha_h = eps0_h*alpha_h;
   alpha_J = eps0_J*alpha_J;
 
   //Derivatives
-  arma::mat dh(mymodel.N,mymodel.q,arma::fill::zeros);
-  arma::cube dJ(mymodel.q, mymodel.q, mymodel.N*(mymodel.N-1)/2,arma::fill::zeros);
+  arma::vec dh(mymodel.N,arma::fill::zeros);
+  arma::vec dJ(mymodel.N*(mymodel.N-1)/2,arma::fill::zeros);
 
   //Stored derivatives of previous
-  arma::mat dh_prev(mymodel.N,mymodel.q,arma::fill::ones);
-  arma::cube dJ_prev(mymodel.q, mymodel.q, mymodel.N*(mymodel.N-1)/2,arma::fill::ones);
+  arma::vec dh_prev(mymodel.N,arma::fill::ones);
+  arma::vec dJ_prev(mymodel.N*(mymodel.N-1)/2,arma::fill::ones);
 
   //Changes in parameters (for momentum)
-  arma::mat change_h(mymodel.N,mymodel.q,arma::fill::zeros);
-  arma::cube change_J(mymodel.q,mymodel.q,mymodel.N*(mymodel.N-1)/2,arma::fill::zeros);
+  arma::vec change_h(mymodel.N,arma::fill::zeros);
+  arma::vec change_J(mymodel.N*(mymodel.N-1)/2,arma::fill::zeros);
 
   //Average energy
   arma::vec avg_energies(max_iter, arma::fill::zeros);
@@ -230,7 +227,7 @@ void fit(model &mymodel, arma::mat &msa_freq, arma::cube &msa_corr, int nr){
     alpha_h.load(input_name + "/alpha_h_curr.txt", arma::arma_ascii);
     alpha_J.load(input_name + "/alpha_J_curr.txt", arma::arma_ascii);
     dh_prev.load(input_name + "/dh_prev_curr.txt", arma::arma_ascii);
-    dJ_prev.load(input_name + "/dJ_prev_curr.txt", arma::arma_ascii);   
+    dJ_prev.load(input_name + "/dJ_prev_curr.txt", arma::arma_ascii);
     change_h.load(input_name + "/change_h_curr.txt", arma::arma_ascii);
     change_J.load(input_name + "/change_J_curr.txt", arma::arma_ascii);
   }
@@ -247,10 +244,10 @@ void fit(model &mymodel, arma::mat &msa_freq, arma::cube &msa_corr, int nr){
     alpha_h.save(scratch_dir + "alpha_h_curr.txt", arma::arma_ascii);
     alpha_J.save(scratch_dir + "alpha_J_curr.txt", arma::arma_ascii);
     dh_prev.save(scratch_dir + "dh_prev_curr.txt", arma::arma_ascii);
-    dJ_prev.save(scratch_dir + "dJ_prev_curr.txt", arma::arma_ascii);   
+    dJ_prev.save(scratch_dir + "dJ_prev_curr.txt", arma::arma_ascii);
     change_h.save(scratch_dir + "change_h_curr.txt", arma::arma_ascii);
     change_J.save(scratch_dir + "change_J_curr.txt", arma::arma_ascii);
-    write_restart(mymodel,output_dir + "restart.conf");    
+    write_restart(mymodel,output_dir + "restart.conf");
 
     run_mc_traj(mymodel,mc_steps,nr);
 
@@ -262,44 +259,17 @@ void fit(model &mymodel, arma::mat &msa_freq, arma::cube &msa_corr, int nr){
     dh = msa_freq-mymodel.mom1;
     dJ = msa_corr-mymodel.mom2;
 
+    // regularization types
     if(reg_type=="L2"){
-      dh -= 2*mymodel.lambda*mymodel.h;
-      dJ -= 2*mymodel.lambda*mymodel.J;
+      dh += 2*mymodel.lambda*mymodel.h;
+      dJ += 2*mymodel.lambda*mymodel.J;
     }
     else if(reg_type=="L1"){
-      dh -= mymodel.lambda*sign(mymodel.h);
-      dJ -= mymodel.lambda*sign(mymodel.J);
-    }
-    else if(reg_type=="LH"){
-      arma::mat M = get_norm(mymodel);
-      arma::cube dmat(mymodel.q, mymodel.q, mymodel.N*(mymodel.N-1)/2,arma::fill::zeros);
-      arma::mat term1(mymodel.N,mymodel.N,arma::fill::zeros);
-      arma::vec p(mymodel.N,arma::fill::zeros);
-      for(int i=0; i<mymodel.N; i++){
-        for(int j=0; j<mymodel.N; j++){
-          p(i) += M(i,j);
-        }
-      }
-      std::cout << "psum: " << arma::accu(p) << std::endl;
-      for(int i=0; i<mymodel.N; i++){
-        for(int j=0; j<mymodel.N; j++){
-          term1(i,j) = p(i)*p(j)/(arma::accu(p)+1e-10); //prevent div by zero
-        }
-      }
-      for(int i=0; i<mymodel.N-1; i++){
-        for(int j=i+1; j<mymodel.N; j++){
-          int index = (mymodel.N-1)*i-i*(i+1)/2+j-1;
-          for(int a=0; a<mymodel.q; a++){
-            for(int b=0; b<mymodel.q; b++){
-              dmat(a,b,index) = term1(i,j)*mymodel.J(a,b,index)/(M(i,j)+1e-10); //prevent div by zero
-            }
-          }
-        }
-      }
-      dJ -= 2*mymodel.lambda*dmat;
+      dh += mymodel.lambda*sign(mymodel.h);
+      dJ += mymodel.lambda*sign(mymodel.J);
     }
 
-    change_h = gamma_mom*change_h + alpha_h%dh;
+    change_h = gamma_mom*change_h + alpha_h%dh; //% = element-wise matrix multiplication
     change_J = gamma_mom*change_J + alpha_J%dJ;
 
     //Dump derivatives to file
@@ -356,7 +326,7 @@ void fit(model &mymodel, arma::mat &msa_freq, arma::cube &msa_corr, int nr){
 	  mymodel.mom2.save(scratch_dir + "stat_MC_2p_" + std::to_string(niter) + ".txt",arma::arma_ascii);
 	  mymodel.h.save(scratch_dir + "h_" + std::to_string(niter) + ".txt", arma::arma_ascii);
 	  mymodel.J.save(scratch_dir + "J_" + std::to_string(niter) + ".txt", arma::arma_ascii);
-    }    
+    }
 
     //Update parameters
     mymodel.h += change_h;
@@ -365,26 +335,22 @@ void fit(model &mymodel, arma::mat &msa_freq, arma::cube &msa_corr, int nr){
     //Update learning rates **MAKE THIS INTO A SEPARATE FUNCTION**
     if(adaptive_stepsize_on){
       for(int i=0; i<mymodel.N; i++){
-        for(int a=0; a<mymodel.q; a++){
-          double prod = dh_prev(i,a)*dh(i,a);
-          if(prod>0 && alpha_h(i,a)<eps_max_h) alpha_h(i,a) = eps_inc*alpha_h(i,a);
-          else if(prod<0 && alpha_h(i,a)>eps_min_h) alpha_h(i,a) = eps_dec*alpha_h(i,a);
+          double prod = dh_prev(i)*dh(i);
+          if(prod>0 && alpha_h(i)<eps_max_h) alpha_h(i) = eps_inc*alpha_h(i);
+          else if(prod<0 && alpha_h(i)>eps_min_h) alpha_h(i) = eps_dec*alpha_h(i);
           else {};
-          if(alpha_h(i,a)>eps_max_h) alpha_h(i,a)=eps_max_h;
-          if(alpha_h(i,a)<eps_min_h) alpha_h(i,a)=eps_min_h;
-        }
+          if(alpha_h(i)>eps_max_h) alpha_h(i)=eps_max_h;
+          if(alpha_h(i)<eps_min_h) alpha_h(i)=eps_min_h;
       }
       for(int i=0; i<mymodel.N-1; i++){
-        for(int j=i+1; j<mymodel.N; j++){ 
+        for(int j=i+1; j<mymodel.N; j++){
           int index = (mymodel.N-1)*i-i*(i+1)/2+j-1;
-          for(int a=0; a<mymodel.q; a++){
-            for(int b=0; b<mymodel.q; b++){
-              double prod = dJ_prev(a,b,index)*dJ(a,b,index);
-              if(prod>0 && alpha_J(a,b,index)<eps_max_J_N/mymodel.N) alpha_J(a,b,index) = eps_inc*alpha_J(a,b,index);
-              else if(prod<0 && alpha_J(a,b,index)>eps_min_J) alpha_J(a,b,index) = eps_dec*alpha_J(a,b,index);
+              double prod = dJ_prev(index)*dJ(index);
+              if(prod>0 && alpha_J(index)<eps_max_J_N/mymodel.N) alpha_J(index) = eps_inc*alpha_J(index);
+              else if(prod<0 && alpha_J(index)>eps_min_J) alpha_J(index) = eps_dec*alpha_J(index);
               else {};
-              if(alpha_J(a,b,index)>eps_max_J_N/mymodel.N) alpha_J(a,b,index)=eps_max_J_N/mymodel.N;
-              if(alpha_J(a,b,index)<eps_min_J) alpha_J(a,b,index)=eps_min_J;
+              if(alpha_J(index)>eps_max_J_N/mymodel.N) alpha_J(index)=eps_max_J_N/mymodel.N;
+              if(alpha_J(index)<eps_min_J) alpha_J(index)=eps_min_J;
             }
           }
         }
@@ -395,14 +361,6 @@ void fit(model &mymodel, arma::mat &msa_freq, arma::cube &msa_corr, int nr){
     dh_prev = dh;
     dJ_prev = dJ;
 
-    /*
-    if(mymodel.q==2){
-      double Z = mymodel.get_Z();
-      entropy[niter] = log(Z)-arma::accu(mymodel.mom1%mymodel.h)-arma::accu(mymodel.mom2%mymodel.J); 
-      std::cout << "Cross-entropy: " << entropy[niter] << std::endl;
-    }
-    */
-    
     niter++;
   }
 
@@ -411,9 +369,6 @@ void fit(model &mymodel, arma::mat &msa_freq, arma::cube &msa_corr, int nr){
 
   //Dump energies to file
   avg_energies.save(output_dir + "avg_ene.txt", arma::arma_ascii);
-  //entropy.save(output_dir + "entropy.txt", arma::arma_ascii);
-  //
-
 
 }
 
@@ -469,7 +424,7 @@ void read_inputs(std::string name){
     }
     std::cout << std::endl;
     file.close();
-  }  
+  }
 }
 
 void write_restart(model &mymodel, std::string name){
@@ -526,21 +481,15 @@ void read_params(model &mymodel, std::string in_name){
       if(id=="J"){
         int i;
         int j;
-        int a;
-        int b;
         my_stream >> i;
         my_stream >> j;
-        my_stream >> a;
-        my_stream >> b;
-        int index = (mymodel.N-1)*i-i*(i+1)/2+j-1; 
-        my_stream >> mymodel.J(a,b,index);
+        int index = (mymodel.N-1)*i-i*(i+1)/2+j-1;
+        my_stream >> mymodel.J(index);
       }
       else if(id=="h"){
         int i;
-        int a;
         my_stream >> i;
-        my_stream >> a;
-        my_stream >> mymodel.h(i,a);
+        my_stream >> mymodel.h(i);
       }
       else{
         std::cout << "Error: unrecognized specifier. Exiting." << std::endl;
@@ -557,17 +506,14 @@ void write_params(model &mymodel, std::string name){
   for(int i=0; i<mymodel.N-1; i++){
     for(int j=i+1; j<mymodel.N; j++){
       int index = (mymodel.N-1)*i-i*(i+1)/2+j-1;
-      for(int a=0; a<mymodel.q; a++){
-        for(int b=0; b<mymodel.q; b++){
-          ofile << "J " << i << " " << j << " " << a << " " << b << " " << mymodel.J(a,b,index) << std::endl;
+          ofile << "J " << i << " " << j << " " << mymodel.J(index) << std::endl;
         }
       }
     }
   }
 
   for(int i=0; i<mymodel.N; i++){
-    for(int a=0; a<mymodel.q; a++){
-      ofile << "h " << i << " " << a << " " << mymodel.h(i,a) << std::endl;
+      ofile << "h " << i << " " << mymodel.h(i) << std::endl;
     }
   }
   ofile.close();
@@ -581,24 +527,4 @@ void write_seqs(model &mymodel, std::string name){
     ofile << mymodel.seqs[i] << std::endl;
   }
   ofile.close();
-}
-
-arma::mat get_norm(model &mymodel){
- 
-  arma::mat M(mymodel.N,mymodel.N,arma::fill::zeros);
-  for(int i=0; i<mymodel.N-1; i++){
-    for(int j=i+1; j<mymodel.N; j++){
-      int index = (mymodel.N-1)*i-i*(i+1)/2+j-1;
-      double sum=0;
-      for(int a=0; a<mymodel.q; a++){
-        for(int b=0; b<mymodel.q; b++){
-          sum += mymodel.J(a,b,index)*mymodel.J(a,b,index);
-        }
-      }
-      sum = sqrt(sum);
-      M(i,j) = sum;
-      M(j,i) = M(i,j);
-    }
-  }
-  return M;
 }

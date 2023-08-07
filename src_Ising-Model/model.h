@@ -14,7 +14,6 @@ class model {
   public:
 
     int N; //Length of sequences
-    int q; //Number of possible states (residue types)
     double lambda; //l2 regularization constant
     double avg_ene; //Average energy estimated by most recent MC run
     bool symmetrize_on;
@@ -25,12 +24,12 @@ class model {
     arma::mat mom1; //First moment
     arma::cube mom2; //Second moment
     double mom1_err; //Std error in first moment via block averaging
-    double mom2_err; //Std error in second moment via block averaging    
+    double mom2_err; //Std error in second moment via block averaging
     std::string mc_init;
 
     //Constructors
     model();
-    model(int N1, int q1, double lam, bool symon, std::string mc_init1);
+    model(int N1, double lam, bool symon, std::string mc_init1);
     //Destructor
     ~model();
 
