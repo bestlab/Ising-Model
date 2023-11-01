@@ -1,0 +1,28 @@
+For armadillo:
+- used "cmake . -DCMAKE_INSTALL_PREFIX:PATH=alternative_directory" to install everything into the home directory
+
+Modules loaded into biowulf:
+Currently Loaded Modules:
+  1) cmake/3.16.4                4) hdf5/1.10.1
+  2) gcc/10.2.0                  5) LAPACK/3.8.0/gcc-7.2.0-64
+  3) openblas/0.2.20-gcc-7.2.0
+
+- apparently cannot load ATLAS and LAPACK at the same time for whatever reason...
+
+To install the actual program:
+- deleted '-larmadillo' flag from links (LDFLAGS) variable on line 30
+
+To actually run the program I'm using the line
+sbatch --partition=norm --time=10-00:00:00 ntl9_stable.sh
+
+To increase the memory size:
+sbatch --partition=norm --mem=15g --time=10-00:00:00 ntl9_stable.sh
+
+To view the results of the program I'm using:
+sacct --format="JobID,JobName%30"
+
+Post RHEL8 installation, modules loaded into biowulf:
+Currently Loaded Modules:
+  1) cmake/3.23.0   3) openblas/0.3.20-gcc11.3.0   5) LAPACK/3.10.1/gcc-11.3.0
+  2) gcc/11.3.0     4) hdf5/1.12.2
+
