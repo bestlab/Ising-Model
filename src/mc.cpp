@@ -19,7 +19,6 @@
 #include "msa.h"
 #include "model.h"
 #include "rand.h"
-#include "omp.h"
 
 // number of times to run sweep for equilibrium sequences
 int nequil=1000;

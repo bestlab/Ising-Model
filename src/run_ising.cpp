@@ -9,7 +9,6 @@
 #include "model.h"
 #include "msa.h"
 #include "run_ising.h"
-#include "omp.h"
 
 #include <stdio.h>
 #include <stdlib.h>
