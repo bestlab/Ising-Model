@@ -18,9 +18,13 @@ Test Example Instructions:
 
 Change to example and run ../bin/run_ising example/ntl9_stable_eg.conf
 
-Plotting scripts:
+Analysis scripts:
 
-SOME INFO HERE...
+coop_distribution_tails_log.py
+	-- computes distribution of cooperativities from output of Ising Model fit
+
+coop_network.py
+	-- computes cooperative contact networks from output of Ising Model fit
 
 Background:
 
