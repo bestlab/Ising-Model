@@ -7,10 +7,14 @@ import mdtraj as md
 from matplotlib import colors
 import matplotlib.patches as mpatches
 
+# inputs
+numResid = 39
+f_in = 'NTL9_native.pdb'
+f_out = "J_dist_tails_NTL9_stable_log.png"
+
 # find the native contacts
 traj = md.load('NTL9_native.pdb')
 prot = traj.atom_slice(traj.topology.select("protein"))
-numResid = 39
 
 # make initial list of contacts
 lstPotContact = []
@@ -131,6 +135,5 @@ yellow_patch = mpatches.Patch(color='purple',label='Native-Nonnative')
 plt.legend(handles=[red_patch,yellow_patch,blue_patch],loc='upper right',fontsize=35,borderaxespad=0.10,bbox_to_anchor=[0.58,1.0])
 plt.subplots_adjust(bottom = 0.13, top=0.95, left=0.10,right = 0.97,wspace=0.25,hspace=0.25)
 plt.xlabel(r'$\varepsilon_{ij}$ Value',x=0.50,fontsize=40)
-out_f = "J_dist_tails_NTL9_stable_log.png"
-plt.savefig(out_f)
+plt.savefig(f_out)
 plt.close()
