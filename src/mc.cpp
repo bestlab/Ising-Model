@@ -19,6 +19,7 @@
 #include "msa.h"
 #include "model.h"
 #include "rand.h"
+#include "omp.h"
 
 // number of times to run sweep for equilibrium sequences
 int nequil=1000;
@@ -140,7 +141,7 @@ void do_sweep(model &model, std::vector<int> &seq, int T, gsl_rng *rng){
     double xsi = gsl_rng_uniform(rng);
     // acceptance probability = prob
     // if random number xsi is within acceptance probability then accept
-    if(prob>xsi) seq[s] = (int)r;
+    if(prob>=xsi) seq[s] = (int)r;
   }
 }
 
