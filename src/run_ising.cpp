@@ -9,6 +9,7 @@
 #include "model.h"
 #include "msa.h"
 #include "run_ising.h"
+#include "omp.h"
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -251,17 +252,17 @@ void fit(model &mymodel, arma::mat &msa_freq, arma::mat &msa_corr){
     write_seqs(mymodel, scratch_dir + "seqs_" + std::to_string(niter) + ".txt");
 
     /*** Compute derivatives ***/
-    dh = msa_freq-mymodel.mom1;
-    dJ = msa_corr-mymodel.mom2;
+    dh = mymodel.mom1-msa_freq;
+    dJ = mymodel.mom2-msa_corr;
 
     // regularization types
     if(reg_type=="L2"){
-      dh += 2*mymodel.lambda*mymodel.h;
-      dJ += 2*mymodel.lambda*mymodel.J;
+      dh -= 2*mymodel.lambda*mymodel.h;
+      dJ -= 2*mymodel.lambda*mymodel.J;
     }
     else if(reg_type=="L1"){
-      dh += mymodel.lambda*sign(mymodel.h);
-      dJ += mymodel.lambda*sign(mymodel.J);
+      dh -= mymodel.lambda*sign(mymodel.h);
+      dJ -= mymodel.lambda*sign(mymodel.J);
     }
 
     change_h = gamma_mom*change_h + alpha_h%dh; //% = element-wise matrix multiplication
@@ -324,8 +325,8 @@ void fit(model &mymodel, arma::mat &msa_freq, arma::mat &msa_corr){
     }
 
     //Update parameters
-    mymodel.h -= change_h;
-    mymodel.J -= change_J;
+    mymodel.h += change_h;
+    mymodel.J += change_J;
 
     //Update learning rates **MAKE THIS INTO A SEPARATE FUNCTION**
     if(adaptive_stepsize_on){
