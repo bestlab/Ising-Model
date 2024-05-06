@@ -46,7 +46,7 @@ energy terms. The code uses Boltzmann machine learning (following Lapedes,
 Giraud, & Jarzynski arXiv:1207.2484) to learn these parameters given a set of
 trajectory frames where all possible contacts have been delineated in the code.
 To run the code, build the code and run the executable in the bin folder. 
-The script requires as input a conf file one example of which is located in 
+The script requires as input a conf file; one example of which is located in 
 the "example" folder. The conf file specifies input and output directories 
 and the location of the MD trajectory for the input data.
 
