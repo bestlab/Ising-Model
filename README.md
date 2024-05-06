@@ -15,9 +15,9 @@ Installation Instructions:
 	2. Run make to compile
 
 Test Example Instructions:
-Download data file from Zenodo link:
 
-Change to example and run ../bin/run_ising example/ntl9_stable_eg.conf
+Example conf file and villin contact data found in example folder.
+Change to example and run ../bin/run_ising example/villin.conf
 
 Output should be similar to villin.bm_param file found in Zenodo.
 
