@@ -1,4 +1,4 @@
-# Boltzmann-Machine-DCA
+# Ising-like Model
 Implementation of ising-like model for protein contact analysis using a Boltzmann machine algorithm.
 
 There is one executable produced in this repository: run_ising. See below for background.
@@ -17,14 +17,6 @@ Installation Instructions:
 Test Example Instructions:
 
 Change to example and run ../bin/run_ising example/ntl9_stable_eg.conf
-
-Analysis scripts:
-
-coop_distribution_tails_log.py
-	-- computes distribution of cooperativities from output of Ising Model fit
-
-coop_network.py
-	-- computes cooperative contact networks from output of Ising Model fit
 
 Background:
 
