@@ -44,6 +44,6 @@ models which, when sampled, can reproduce the single and pairwise contact freque
 of an input trajectory to within a user-defined accuracy. However, for very high
 accuracy (low error tolerance), the code may take infeasibly long to run. This
 may be especially true for proteins with longer sequences. Note that compilation
-(which can be achieved with the "make" command in the "swDCA" directories) and
+(which can be achieved with the "make" command in the main directory) and
 use require that the Armadillo linear algebra library for C++ be installed.
 
