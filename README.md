@@ -32,8 +32,8 @@ continuation simulation:
    	2. input_name: uses previous parameter files found in scratch directory of initial simulation,
 	specifies the parameters used in the last iteration of the previous simulation
 	3. mc_steps: this should be updated to be the same as the maximum number of mc steps used
-      	in the previous simulation. This information can be found in the log file under lines detailing
-       	"MC steps per iteration: "
+	in the previous simulation. This information can be found in the log file under lines detailing
+	"MC steps per iteration: "
 	4. num_restarts: update to indicate number of continuations
 
 Background:
