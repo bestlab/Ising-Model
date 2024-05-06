@@ -10,7 +10,8 @@ Installation Prerequisites:
 	3. Armadillo C++ library for lineary algebra & scientific computing https://arma.sourceforge.net/
 
 Installation Instructions:
-	1. Edit makefile to set local paths, in particular:
+	
+ 	1. Edit makefile to set local paths, in particular:
 		- ARMA_DIR set to installation of Armadillo library
 		- CXXFLAGS and LDFLAGS set to include any nonstandard paths for libraries
 	2. Run make to compile
