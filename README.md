@@ -15,8 +15,11 @@ Installation Instructions:
 	2. Run make to compile
 
 Test Example Instructions:
+Download data file from Zenodo link:
 
 Change to example and run ../bin/run_ising example/ntl9_stable_eg.conf
+
+Output should be similar to villin.bm_param file found in Zenodo.
 
 Background:
 
@@ -46,7 +49,4 @@ accuracy (low error tolerance), the code may take infeasibly long to run. This
 may be especially true for longer protein sequences. Note that compilation
 (which can be achieved with the "make" command in the "swDCA" directories) and
 use require that the Armadillo linear algebra library for C++ be installed.
-
-Analysis scripts (located in the "scripts" subdirectories of "swDCA") are
-written in Python 3 and bash. 
 
