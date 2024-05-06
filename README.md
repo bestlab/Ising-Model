@@ -25,7 +25,8 @@ The output should be similar to the villin.bm_param file found in Zenodo.
 To run a continuation simulation use a conf file similar to the villin_cont.conf file found in /example.
 The main differences between a conf file for running the initial simulation and a conf file for running a 
 continuation simulation:
-	1. freq_dir: uses frequency files found in scratch directory of initial simulation, specifies
+	
+ 	1. freq_dir: uses frequency files found in scratch directory of initial simulation, specifies
  	the frequencies of single and pairwise contacts found in the msa_name file so it does not have
   	to be recalculated
    	2. input_name: uses previous parameter files found in scratch directory of initial simulation,
