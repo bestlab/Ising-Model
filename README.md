@@ -18,8 +18,20 @@ Test Example Instructions:
 
 Example conf file and villin contact data found in example folder.
 Change to example and run ../bin/run_ising example/villin.conf
+The output should be similar to the villin.bm_param file found in Zenodo.
 
-Output should be similar to villin.bm_param file found in Zenodo.
+To run a continuation simulation use a conf file similar to the villin_cont.conf file found in /example.
+The main differences between a conf file for running the initial simulation and a conf file for running a 
+continuation simulation:
+	1. freq_dir: uses frequency files found in scratch directory of initial simulation, specifies
+ 	the frequencies of single and pairwise contacts found in the msa_name file so it does not have
+  	to be recalculated
+   	2. input_name: uses previous parameter files found in scratch directory of initial simulation,
+    	specifies the parameters used in the last iteration of the previous simulation
+     	3. mc_steps: this should be updated to be the same as the maximum number of mc steps used
+      	in the previous simulation. This information can be found in the log file under lines detailing
+       	"MC steps per iteration: "
+	4. num_restarts: update to indicate number of continuations
 
 Background:
 
