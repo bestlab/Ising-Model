@@ -4,7 +4,8 @@ Implementation of ising-like model for protein contact analysis using a Boltzman
 There is one executable produced in this repository: run_ising. See below for background.
 
 Installation Prerequisites:
-	1. C++ compiler and standard libraries
+	
+ 	1. C++ compiler and standard libraries
 	2. GNU Scientific Library (GSL) https://www.gnu.org/software/gsl/ 
 	3. Armadillo C++ library for lineary algebra & scientific computing https://arma.sourceforge.net/
 
