@@ -58,7 +58,10 @@ parameters. The ising code has been tested for its ability to produce energy
 models which, when sampled, can reproduce the single and pairwise contact frequencies
 of an input trajectory to within a user-defined accuracy. However, for very high
 accuracy (low error tolerance), the code may take infeasibly long to run. This
-may be especially true for proteins with longer sequences. Note that compilation
-(which can be achieved with the "make" command in the main directory) and
-use require that the Armadillo linear algebra library for C++ be installed.
+may be especially true for proteins with longer sequences. Furthermore, given
+the quadratic scaling of the number of contacts with respect to the number of
+residues in a protein we estimate that the code only functions for proteins
+with ~180 residues or less. Note that compilation (which can be achieved with 
+the "make" command in the main directory) and use require that the 
+Armadillo linear algebra library for C++ be installed.
 
