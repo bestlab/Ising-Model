@@ -19,7 +19,8 @@ Installation Instructions:
 Test Example Instructions:
 
 Example conf file and villin contact data found in example folder.
-Change to example and run ../bin/run_ising example/villin.conf
+Change to example, unzip data file and run ../bin/run_ising example/villin.conf
+(or just run ./runme.sh)
 The output should be similar to the villin.bm_param file found in Zenodo.
 
 To run a continuation simulation use a conf file similar to the villin_cont.conf file found in /example.
